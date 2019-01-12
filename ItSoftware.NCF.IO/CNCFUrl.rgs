@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.Url.1 = s 'NFCUrl Class'
+	{
+		CLSID = s '{65DE533B-16D7-4DD5-B58E-F1887105EB4F}'
+	}
+	ItSoftware.NCF.Url = s 'NFCUrl Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.Url.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {65DE533B-16D7-4DD5-B58E-F1887105EB4F} = s 'NFCUrl Class'
+		{
+			ProgID = s 'ItSoftware.NCF.Url.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.Url'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{CE56C292-257B-4680-9026-0F4E43D79CBD}'
+			Version = s '1.0'
+		}
+	}
+}

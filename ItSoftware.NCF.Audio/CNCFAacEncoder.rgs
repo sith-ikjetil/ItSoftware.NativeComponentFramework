@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.AacEncoder.1 = s 'CFAacEncoder Class'
+	{
+		CLSID = s '{50D87872-E0E2-4470-9DE0-48FF297E0584}'
+	}
+	ItSoftware.NCF.AacEncoder = s 'CFAacEncoder Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.AacEncoder.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {50D87872-E0E2-4470-9DE0-48FF297E0584} = s 'CFAacEncoder Class'
+		{
+			ProgID = s 'ItSoftware.NCF.AacEncoder.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.AacEncoder'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

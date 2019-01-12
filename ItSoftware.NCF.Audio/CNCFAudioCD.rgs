@@ -1,0 +1,25 @@
+HKCR
+{
+	ItSoftware.NCF.AudioCD.1 = s 'CAudioCD Class'
+	{
+		CLSID = s '{7C01ACFA-59D2-4539-9D86-288A215423D8}'
+	}
+	ItSoftware.NCF.AudioCD = s 'CAudioCD Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.AudioCD.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {7C01ACFA-59D2-4539-9D86-288A215423D8} = s 'CAudioCD Class'
+		{
+			ProgID = s 'ItSoftware.NCF.AudioCD.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.AudioCD'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

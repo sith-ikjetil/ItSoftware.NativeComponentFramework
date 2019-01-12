@@ -1,0 +1,51 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(493378E5-71C6-4ACA-ACB4-B28D2695BA33),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INCFCollectionList : IDispatch
+{
+	[id(1), helpstring("Add an item to the back of the list.")]
+	HRESULT AddItemToBack([in] VARIANT vtItem);
+
+	[id(2), helpstring("Add an item in the front of the list.")]
+	HRESULT AddItemToFront([in] VARIANT vtItem);
+
+	[id(3), helpstring("Remove the last item of the list.")]
+	HRESULT RemoveBackItem();
+
+	[id(4), helpstring("Remove the first item of the list.")]
+	HRESULT RemoveFrontItem();
+
+	[id(5), propget, helpstring("Retrieve the number of elements in the list.")]
+	HRESULT Size([out, retval] long *plSize);
+
+	[id(6), helpstring("Retrieves an item by it's zero based index.")]
+	HRESULT GetItemByIndex([in] long lIndex, [out, retval] VARIANT *pvtItem);
+
+	[id(7), helpstring("Set an item by its value.")]
+	HRESULT SetItemByIndex([in] long lIndex, [in] VARIANT vtItem);
+
+	[id(8), helpstring("Removes an item by it's zero based index.")]
+	HRESULT RemoveItemByIndex([in] long lIndex);
+
+	[id(9), helpstring("Removes items in the list by their values.")]
+	HRESULT RemoveItemsByValue([in] VARIANT vtItem);
+
+	[id(10), helpstring("Erase all items.")]
+	HRESULT Clear();
+
+	[id(11), propget, helpstring("Is list empty?")]
+	HRESULT Empty([out, retval] VARIANT_BOOL *pvtbEmpty);
+
+	[id(12), helpstring("Inserts an item before another at specified index.")]
+	HRESULT InsertItemBefore([in] long lIndex, [in] VARIANT vtItem);
+
+	[id(13), helpstring("Removes all elements between indexes")]
+	HRESULT RemoveItems([in] long lIndex1, [in] long lIndex2);
+};

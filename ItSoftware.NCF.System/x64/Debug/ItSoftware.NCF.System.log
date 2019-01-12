@@ -1,0 +1,490 @@
+﻿  64 bit Processing .\ItSoftwareNCFSystem.idl
+  ItSoftwareNCFSystem.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.idl
+  oaidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\objidl.idl
+  objidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\unknwn.idl
+  unknwn.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypes.idl
+  wtypes.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypesbase.idl
+  wtypesbase.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\basetsd.h
+  basetsd.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\guiddef.h
+  guiddef.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.idl
+  ocidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oleidl.idl
+  oleidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\servprov.idl
+  servprov.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\urlmon.idl
+  urlmon.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\msxml.idl
+  msxml.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.acf
+  oaidl.acf
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.acf
+  ocidl.acf
+  stdafx.cpp
+  CNCFEventLog.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(23): error C2065: 'CLSID_NCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(23): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(25): error C2065: 'INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(25): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(25): error C2923: 'ATL::IDispatchImpl': 'INCFEventLog' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(25): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(26): error C2923: 'ATL::IDispatchImpl': 'INCFEventLog' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(26): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(26): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(27): error C2061: syntax error: identifier 'EEVENTLOGTYPE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(68): error C2061: syntax error: identifier 'EEVENTLOGTYPE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(69): error C2061: syntax error: identifier 'EEVENTLOGTYPE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(34): error C2065: 'IDR_CNCFEVENTLOG': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(39): error C2065: 'INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(39): error C2061: syntax error: identifier 'INCFEventLog'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(39): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(39): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(40): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(40): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(40): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(41): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(41): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(41): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(42): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(42): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(42): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(43): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(43): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(43): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(43): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(49): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(49): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2065: 'NCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.h(74): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(15): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(28): error C2061: syntax error: identifier 'EEVENTLOGTYPE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(30): error C2065: 'eeventlogtype': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(30): error C2065: 'EET_AUDIT_FAILURE': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(30): error C2065: 'numberofstrings': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(30): error C2065: 'description': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(31): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(37): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(40): error C2065: 'eeventlogtype': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(40): error C2065: 'category': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(40): error C2065: 'eventid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(40): error C2065: 'numberofstrings': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(40): error C2065: 'description': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(45): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(52): error C2061: syntax error: identifier 'EEVENTLOGTYPE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(55): error C2065: 'description': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(56): error C2065: 'eeventlogtype': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(56): error C2065: 'EET_AUDIT_FAILURE': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(56): error C2065: 'numberofstrings': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(56): error C2065: 'description': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(57): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(64): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(67): error C2065: 'eeventlogtype': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(67): error C2065: 'category': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(67): error C2065: 'eventid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(67): error C2065: 'numberofstrings': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(67): error C2065: 'description': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(72): error C2065: 'IID_INCFEventLog': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(252): error C2065: 'EEVENTLOGTYPE': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(252): error C2146: syntax error: missing ')' before identifier 'type'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(253): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfeventlog.cpp(253): error C2447: '{': missing function header (old-style formal list?)
+  CNCFGuid.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(23): error C2065: 'CLSID_NCFGuid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(23): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(25): error C2065: 'INCFGuid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(25): error C2065: 'IID_INCFGuid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(25): error C2923: 'ATL::IDispatchImpl': 'INCFGuid' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(25): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(26): error C2923: 'ATL::IDispatchImpl': 'INCFGuid' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(26): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(26): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(67): error C2061: syntax error: identifier 'EGUIDTYPE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(33): error C2065: 'IDR_CNCFGUID': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(38): error C2065: 'INCFGuid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(38): error C2061: syntax error: identifier 'INCFGuid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(38): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(38): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(39): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(39): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(39): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(40): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(40): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(40): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(41): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(41): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(41): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(42): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(42): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(42): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(42): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(48): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(48): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2065: 'NCFGuid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.h(72): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.cpp(14): error C2065: 'IID_INCFGuid': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.cpp(25): error C2065: 'EGUIDTYPE': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.cpp(25): error C2146: syntax error: missing ')' before identifier 'type'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.cpp(26): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.cpp(26): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.cpp(59): error C2653: 'EGUIDTYPE': is not a class or namespace name
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfguid.cpp(59): error C2065: 'EGUID_REGISTRYFORMAT': undeclared identifier
+  CNCFIniFile.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(23): error C2065: 'CLSID_NCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(23): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(25): error C2065: 'INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(25): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(25): error C2923: 'ATL::IDispatchImpl': 'INCFIniFile' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(25): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(26): error C2923: 'ATL::IDispatchImpl': 'INCFIniFile' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(26): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(26): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(96): error C2061: syntax error: identifier 'INCFCollectionMap'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(101): error C2061: syntax error: identifier 'INCFCollectionMap'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(104): error C2061: syntax error: identifier 'INCFCollectionList'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(34): error C2065: 'IDR_CNCFINIFILE': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(39): error C2065: 'INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(39): error C2061: syntax error: identifier 'INCFIniFile'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(39): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(39): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(40): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(40): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(40): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(41): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(41): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(41): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(42): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(42): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(42): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(43): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(43): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(43): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(43): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(49): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(49): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2065: 'NCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.h(108): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(13): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(43): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(62): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(74): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(82): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(95): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(114): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(132): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(144): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(151): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(158): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(169): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(180): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(192): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(198): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(206): error C2061: syntax error: identifier 'INCFCollectionMap'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(209): error C2065: 'pINCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(210): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(214): error C2065: 'pINCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(218): error C2065: 'pINCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(220): error C2065: 'overwriteifexist': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(228): error C2061: syntax error: identifier 'INCFCollectionMap'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(230): error C2065: 'ppINCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(231): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(234): error C2065: 'INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(234): error C2923: 'ATL::CComPtr': 'INCFCollectionMap' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(234): error C2133: 'pINCFCollectionMap': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(234): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(235): error C2661: 'ATL::CComPtrBase<T>::CoCreateInstance': no overloaded function takes 1 arguments
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(237): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(249): error C2065: 'ppINCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(266): error C2039: 'AddItem': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(277): error C2065: 'ppINCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(282): error C2061: syntax error: identifier 'INCFCollectionList'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(284): error C2065: 'ppINCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(285): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(288): error C2065: 'INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(288): error C2923: 'ATL::CComPtr': 'INCFCollectionList' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(288): error C2133: 'pINCFCollectionList': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(288): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(289): error C2661: 'ATL::CComPtrBase<T>::CoCreateInstance': no overloaded function takes 1 arguments
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(291): error C2065: 'IID_INCFIniFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(303): error C2065: 'ppINCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(315): error C2039: 'AddItemToBack': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfinifile.cpp(325): error C2065: 'ppINCFCollectionList': undeclared identifier
+  CNCFRegistry.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(23): error C2065: 'CLSID_NCFRegistry': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(23): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(25): error C2065: 'INCFRegistry': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(25): error C2065: 'IID_INCFRegistry': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(25): error C2923: 'ATL::IDispatchImpl': 'INCFRegistry' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(25): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(26): error C2923: 'ATL::IDispatchImpl': 'INCFRegistry' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(26): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(26): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(27): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(68): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(72): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(77): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(83): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(88): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(94): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(98): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(103): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(108): error C2061: syntax error: identifier 'EREGCLASS'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(35): error C2065: 'IDR_CNCFREGISTRY': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(40): error C2065: 'INCFRegistry': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(40): error C2061: syntax error: identifier 'INCFRegistry'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(40): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(40): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(41): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(41): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(41): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(42): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(42): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(42): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(43): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(43): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(43): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(44): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(44): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(44): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(44): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(50): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(50): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2065: 'NCFRegistry': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.h(116): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(14): error C2065: 'IID_INCFRegistry': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(32): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(32): error C2146: syntax error: missing ')' before identifier 'a_regclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(33): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(33): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(76): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(76): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(79): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(79): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(113): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(113): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(117): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(117): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(170): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(170): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(175): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(175): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(217): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(217): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(221): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(221): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(260): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(260): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(265): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(265): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(326): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(326): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(329): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(329): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(387): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(387): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(391): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(391): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(458): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(458): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(462): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(462): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(534): error C2065: 'EREGCLASS': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(534): error C2146: syntax error: missing ')' before identifier 'eregclass'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(538): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfregistry.cpp(538): error C2447: '{': missing function header (old-style formal list?)
+  CNCFString.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(19): error C2065: 'CLSID_NCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(19): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(21): error C2065: 'INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(21): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(21): error C2923: 'ATL::IDispatchImpl': 'INCFString' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(21): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(22): error C2923: 'ATL::IDispatchImpl': 'INCFString' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(22): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(22): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(135): error C2061: syntax error: identifier 'ENEGNUMBERMODE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(144): error C2061: syntax error: identifier 'ENEGCURRENCYMODE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(177): error C2061: syntax error: identifier 'INCFCollectionList'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(179): error C2061: syntax error: identifier 'INCFCollectionList'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(30): error C2065: 'IDR_CNCFSTRING': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(35): error C2065: 'INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(35): error C2061: syntax error: identifier 'INCFString'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(35): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(35): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(36): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(36): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(36): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(37): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(37): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(37): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(38): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(38): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(38): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(39): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(39): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(39): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(39): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(45): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(45): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2065: 'NCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.h(184): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(17): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(37): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(67): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(97): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(128): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(168): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(206): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(221): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(236): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(253): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(286): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(314): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(335): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(369): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(392): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(415): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(429): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(443): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(482): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(517): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(553): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(572): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(594): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(599): warning C4302: 'reinterpret_cast': truncation from 'wchar_t *' to 'long'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(599): warning C4302: 'reinterpret_cast': truncation from 'BSTR' to 'long'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(613): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(645): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(656): warning C4302: 'reinterpret_cast': truncation from 'wchar_t *' to 'long'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(656): warning C4302: 'reinterpret_cast': truncation from 'BSTR' to 'long'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(671): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(709): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(728): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(746): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(761): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(766): warning C4302: 'reinterpret_cast': truncation from 'wchar_t *' to 'ULONG'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(766): warning C4302: 'reinterpret_cast': truncation from 'BSTR' to 'ULONG'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(781): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(786): warning C4302: 'reinterpret_cast': truncation from 'wchar_t *' to 'long'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(786): warning C4302: 'reinterpret_cast': truncation from 'BSTR' to 'long'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(800): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(815): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(829): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(847): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(864): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(894): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(909): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(929): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(952): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(982): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1011): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1041): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1066): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1088): error C2061: syntax error: identifier 'ENEGNUMBERMODE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1093): error C2065: 'negative_number_format': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1094): error C2065: 'result_string': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1096): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1107): error C2065: 'negative_number_format': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1117): error C2065: 'result_string': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1129): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1152): error C2061: syntax error: identifier 'ENEGCURRENCYMODE'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1160): error C2065: 'negative_currency_format': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1160): error C2065: 'positive_currency_format': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1161): error C2065: 'currency_symbol': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1162): error C2065: 'result_string': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1162): error C2065: 'positive_currency_format': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1162): error C2065: 'negative_currency_format': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1164): error C2065: 'IID_INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1174): error C2065: 'currency_symbol': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.system\cncfstring.cpp(1174): fatal error C1003: error count exceeds 100; stopping compilation
+  ItSoftware.NCF.System.cpp
+  Generating Code...

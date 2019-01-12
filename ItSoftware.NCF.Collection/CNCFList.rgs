@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.CollectionList.1 = s 'CNCFCollectionList Class'
+	{
+		CLSID = s '{86F1F40D-CD16-4365-80B9-24BC5FE5DCF0}'
+	}
+	ItSoftware.NCF.CollectionList = s 'CNCFCollectionList Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.CollectionList.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {86F1F40D-CD16-4365-80B9-24BC5FE5DCF0} = s 'CNCFCollectionList Class'
+		{
+			ProgID = s 'ItSoftware.NCF.CollectionList.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.CollectionList'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{0A19436E-3FDD-4996-BCCA-128B7AAABF7A}'
+			Version = s '1.0'
+		}
+	}
+}

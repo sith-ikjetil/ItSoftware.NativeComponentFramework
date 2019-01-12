@@ -1,0 +1,567 @@
+// ItSoftwareNCFAudio.idl : IDL source for ItSoftware.NCF.Audio
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFAudio.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "../Include/INCFCollectionMap.idl";
+#include "../Include/INCFStream.idl";
+
+[
+	object,
+	uuid( 5AB40352-3E42-4B0E-B7DF-9A315920AADE ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFAudioTag : IDispatch
+{
+	[id( 1 ), helpstring( "String containing the content title." )]
+	HRESULT SetTitle( [in] BSTR title );
+
+	[id( 2 ), helpstring( "String containing the content title." )]
+	HRESULT GetTitle( [out, retval] BSTR *title );
+
+	[id( 3 ), helpstring( "String containing the name of the content author." )]
+	HRESULT SetAuthor( [in] BSTR author );
+
+	[id( 4 ), helpstring( "String containing the content title." )]
+	HRESULT	GetAuthor( [out, retval] BSTR *author );
+
+	[id( 5 ), helpstring( "String containing a description of the content." )]
+	HRESULT SetDescription( [in] BSTR description );
+
+	[id( 6 ), helpstring( "String containing a description of the content." )]
+	HRESULT GetDescription( [out, retval] BSTR *description );
+
+	[id( 7 ), helpstring( "String containing a content rating." )]
+	HRESULT SetRating( [in] BSTR rating );
+
+	[id( 8 ), helpstring( "String containing a content rating." )]
+	HRESULT GetRating( [out, retval] BSTR *rating );
+
+	[id( 9 ), helpstring( "String containing a content copyright message." )]
+	HRESULT SetCopyright( [in] BSTR copyright );
+
+	[id( 10 ), helpstring( "String containing a content copyright message." )]
+	HRESULT GetCopyright( [out, retval] BSTR *copyright );
+
+	[id( 11 ), helpstring( "String containing the album title." )]
+	HRESULT SetAlbumTitle( [in] BSTR album_title );
+
+	[id( 12 ), helpstring( "String containing the album title." )]
+	HRESULT GetAlbumTitle( [out, retval] BSTR *album_title );
+
+	[id( 13 ), helpstring( "String word containing the track number." )]
+	HRESULT SetTrack( [in] BSTR track_number );
+
+	[id( 14 ), helpstring( "String containing the track number." )]
+	HRESULT GetTrack( [out, retval] BSTR *track_number );
+
+	[id( 15 ), helpstring( "String with the genre of the music." )]
+	HRESULT SetGenre( [in] BSTR genre );
+
+	[id( 16 ), helpstring( "String with the genre of the music." )]
+	HRESULT GetGenre( [out, retval] BSTR *genre );
+
+	[id( 17 ), helpstring( "String with the year of publication of the music." )]
+	HRESULT SetYear( [in] BSTR year );
+
+	[id( 18 ), helpstring( "String with the year of publication of the music." )]
+	HRESULT GetYear( [out, retval] BSTR *year );
+
+	[id( 19 ), helpstring( "Copyright URL." )]
+	HRESULT SetCopyrightURL( [in] BSTR copyright_url );
+
+	[id( 20 ), helpstring( "Copyright URL." )]
+	HRESULT GetCopyrightURL( [out, retval] BSTR *copyright_url );
+
+	[id( 21 ), helpstring( "Album cover URL." )]
+	HRESULT SetAlbumCoverURL( [in] BSTR album_cover_url );
+
+	[id( 22 ), helpstring( "Album cover URL." )]
+	HRESULT GetAlbumCoverURL( [out, retval] BSTR *album_cover_url );
+
+	[id( 23 ), helpstring( "Set promotion URL." )]
+	HRESULT SetPromotionURL( [in] BSTR promotion_url );
+
+	[id( 24 ), helpstring( "Get promotion URL." )]
+	HRESULT GetPromotionURL( [out, retval] BSTR *promotion_url );
+
+	[id( 25 ), helpstring( "Set lyrics." )]
+	HRESULT SetLyrics( [in] BSTR lyrics );
+
+	[id( 26 ), helpstring( "Get lyrics." )]
+	HRESULT GetLyrics( [out, retval] BSTR *lyrics );
+
+	[id( 27 ), helpstring( "Loads attributes from <filename>." )]
+	HRESULT LoadFromFile( [in] BSTR filename );
+
+	[id( 28 ), helpstring( "Sets the attributes to <filename>." )]
+	HRESULT SaveToFile( [in] BSTR filename );
+
+	[id( 29 ), helpstring( "Loads attributes from IWMHeaderInfo interface." )]
+	HRESULT LoadFromInterface( [in] IUnknown *pIUnknown );
+
+	[id( 30 ), helpstring( "Saves attributes to a IWMHeaderInfo interface.." )]
+	HRESULT SaveToInterface( [in] IUnknown *pIUnknown );
+
+	[id( 31 ), helpstring( "Clears all attributes." )]
+	HRESULT Clear( );
+
+	[id( 32 ), propget, helpstring( "" )]
+	HRESULT Duration( [out, retval] long *milliseconds );
+
+	[id( 33 ), propget, helpstring( "" )]
+	HRESULT HasAudio( [out, retval] VARIANT_BOOL *has_audio );
+
+	[id( 34 ), propget, helpstring( "" )]
+	HRESULT HasVideo( [out, retval] VARIANT_BOOL *has_video );
+
+	[id( 35 ), helpstring( "" )]
+	HRESULT GetComposer( [out, retval] BSTR *composer );
+
+	[id( 36 ), helpstring( "" )]
+	HRESULT SetComposer( [in] BSTR composer );
+
+	[id( 37 ), helpstring( "" )]
+	HRESULT GetAlbumAuthor( [out, retval] BSTR *author );
+
+	[id( 38 ), helpstring( "" )]
+	HRESULT SetAlbumAuthor( [in] BSTR author );
+};
+
+[
+	object,
+	uuid( 78C894FB-9551-45BB-817B-313CC452D698 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFWmaTag : INCFAudioTag
+{
+
+};
+[
+	object,
+	uuid( A32E1EB6-1437-425D-B966-0B427C109B9E ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFMp3Tag : INCFAudioTag
+{
+
+};
+[
+	object,
+	uuid( C9C7563D-D672-47BA-B778-7427A0294380 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFAacTag : INCFAudioTag
+{
+
+};
+[
+	object,
+	uuid( 8B260E48-2D30-42BA-8113-0293CA98489A ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFMp3Genre : IDispatch
+{
+	[id( 1 ), helpstring( "" )]
+	HRESULT GetGenreById( [in] long genre_id, [out, retval] BSTR *genre_name );
+
+	[id( 2 ), helpstring( "" )]
+	HRESULT GetGenreByName( [in] BSTR genre_name, [out, retval] long *genre_id );
+
+	[id( 3 ), helpstring( "Key=Name, value=genre id." )]
+	HRESULT EnumerateGenre( [out, retval] INCFCollectionMap **ppINCFCollectionMap );
+};
+[
+	object,
+	uuid( 01785C52-E318-4AA2-978C-A8D3292D8AEE ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFAudioCD : IDispatch
+{
+	[id( 1 ), helpstring( "" )]
+	HRESULT Load( [in] BSTR drive );
+
+	[id( 2 ), propget, helpstring( "" )]
+	HRESULT CddbId( [out, retval] BSTR *cddb_id );
+
+	[id( 3 ), propget, helpstring( "" )]
+	HRESULT CddbQuery( [out, retval] BSTR *query_string );
+
+	[id( 4 ), propget, helpstring( "" )]
+	HRESULT TrackCount( [out, retval] long *track_count );
+
+	[id( 5 ), propget, helpstring( "" )]
+	HRESULT Loaded( [out, retval] VARIANT_BOOL *status );
+
+	[id( 6 ), propget, helpstring( "" )]
+	HRESULT Drive( [out, retval] BSTR *drive );
+
+	[id( 7 ), propget, helpstring( "Total playtime in seconds." )]
+	HRESULT TotalPlaytime( [out, retval] long *ms );
+
+	[id( 8 ), helpstring( "Total playtime in seconds." )]
+	HRESULT GetPlaytime( [in] long track_number, [out, retval] long *ms );
+
+	[id( 9 ), helpstring( "Extracts a track to disk in wave format." )]
+	HRESULT ExtractTrack( [in] long track_number, [in] BSTR filename, [in] VARIANT_BOOL bAsync );
+
+	[id( 10 ), helpstring( "Executes a cddb query to a freedb server." )]
+	HRESULT ExecuteCddbQuery( [in] BSTR freedb_server, [in] VARIANT_BOOL bAsync );
+
+	[id( 11 ), propget, helpstring( "" )]
+	HRESULT Artist( [out, retval] BSTR *artist );
+
+	[id( 12 ), propget, helpstring( "" )]
+	HRESULT AlbumTitle( [out, retval] BSTR *album_title );
+
+	[id( 13 ), propget, helpstring( "" )]
+	HRESULT Genre( [out, retval] BSTR *genre );
+
+	[id( 14 ), propget, helpstring( "" )]
+	HRESULT Year( [out, retval] BSTR *year );
+
+	[id( 15 ), helpstring( "" )]
+	HRESULT GetTitle( [in] long track_number, [out, retval] BSTR *track_name );
+
+	[id( 16 ), propget, helpstring( "" )]
+	HRESULT CddbLoaded( [out, retval] VARIANT_BOOL *status );
+
+	//[id(17), helpstring("")]
+	//HRESULT ExtractTrackAndEncode([in] EWM_ENCODING_RATE encoding_rate, [in] long track_number, [in] IKKSWMHeaderInfo *pIKKSWMHeaderInfo, [in] BSTR out_filename, [in] VARIANT_BOOL bAsync);
+
+	[id( 18 ), helpstring( "" )]
+	HRESULT ExtractTrackRange( [in] long track_number_start, [in] long track_number_stop, [in] BSTR out_filename, [in] VARIANT_BOOL bAsync );
+
+	//[id(19), helpstring("")]
+	//HRESULT ExtractTrackRangeAndEncode([in] EWM_ENCODING_RATE encoding_rate, [in] long track_number_start, [in] long track_number_stop, [in] IKKSWMHeaderInfo *pIKKSWMHeaderInfo, [in] BSTR out_filename, [in] VARIANT_BOOL bAsync);
+
+	[id( 20 ), propget, helpstring( "Returnes True when async extraction operation completes.(success or error)." )]
+	HRESULT ExtractionFinished( [out, retval] VARIANT_BOOL *status );
+
+	[id( 21 ), propget, helpstring( "Returnes True/False on whether or not the async extraction operation succeeded." )]
+	HRESULT ExtractionSucceeded( [out, retval] VARIANT_BOOL *status );
+
+	[id( 22 ), propget, helpstring( "Returnes Error Message If Async Extraction Operation Failes." )]
+	HRESULT ExtractionErrorMessage( [out, retval] BSTR *error_message );
+
+	[id( 23 ), helpstring( "Get's progress in % (0-100) of completed work." )]
+	HRESULT GetExtractionProgressPercent( [out, retval] long *progress_value );
+
+	//[id(24), helpstring("")]
+	//HRESULT ExtractTrackRangeFromList([in] IKKSList *pIKKSList, [in] BSTR out_filename, [in] VARIANT_BOOL bAsync);
+
+	//[id(25), helpstring("")]
+	//HRESULT ExtractTrackRangeAndEncodeFromList([in] EWM_ENCODING_RATE encoding_rate, [in] IKKSList *pIKKSList, [in] IKKSWMHeaderInfo *pIKKSWMHeaderInfo, [in] BSTR out_filename, [in] VARIANT_BOOL bAsync);
+};
+[
+	object,
+	uuid( A844A5DD-9AB9-4130-A22C-CB752F3CC35D ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFEncoderParams : IDispatch
+{
+	[id( 1 ), helpstring( "Number of channels. 1 = Mono, 2 = Stereo." ), propget]
+	HRESULT NumberOfChannels( [out, retval] short* count );
+
+	[id( 1 ), helpstring( "Number of channels. 1 = Mono, 2 = Stereo." ), propput]
+	HRESULT NumberOfChannels( [in] short count );
+
+	[id( 2 ), helpstring( "Samples per second." ), propget]
+	HRESULT SamplesPerSecond( [out, retval] long* samples );
+
+	[id( 2 ), helpstring( "Samples per second." ), propput]
+	HRESULT SamplesPerSecond( [in] long samples );
+
+	[id( 3 ), helpstring( "Bits per sample." ), propget]
+	HRESULT BitsPerSample( [out, retval] short* bits );
+
+	[id( 3 ), helpstring( "Bits per sample." ), propput]
+	HRESULT BitsPerSample( [in] short bits );
+};
+[
+	object,
+	uuid( CFFAA2D5-B040-469F-9001-02FDF8AD37E8 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFWmaEncoder : IDispatch
+{
+	[id( 1 ), helpstring( "" )]
+	HRESULT Encode( [in] INCFEncoderParams* pINCFEncoderParams, [in] INCFWmaTag* pINCFWmaTag, [in] BSTR in_filename, [in] BSTR out_filename, [in] VARIANT_BOOL async );
+
+	[id( 2 ), propget, helpstring( "Returnes True when async extraction operation completes.(success or error)." )]
+	HRESULT ExtractionFinished( [out, retval] VARIANT_BOOL *status );
+
+	[id( 3 ), propget, helpstring( "Returnes True/False on whether or not the async extraction operation succeeded." )]
+	HRESULT ExtractionSucceeded( [out, retval] VARIANT_BOOL *status );
+
+	[id( 4 ), propget, helpstring( "Returnes Error Message If Async Extraction Operation Failes." )]
+	HRESULT ExtractionErrorMessage( [out, retval] BSTR *error_message );
+
+	[id( 5 ), helpstring( "Get's progress in % (0-100) of completed work." )]
+	HRESULT GetExtractionProgressPercent( [out, retval] long *progress_value );
+};
+[
+	object,
+	uuid( 533B8527-207C-495C-B244-7D02669B5322 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFMp3Encoder : IDispatch
+{
+	[id( 1 ), helpstring( "" )]
+	HRESULT Encode( [in] INCFEncoderParams* pINCFEncoderParams, [in] INCFMp3Tag *pINCFMp3Tag, [in] BSTR in_filename, [in] BSTR out_filename, [in] VARIANT_BOOL async );
+
+	[id( 2 ), propget, helpstring( "Returnes True when async extraction operation completes.(success or error)." )]
+	HRESULT ExtractionFinished( [out, retval] VARIANT_BOOL *status );
+
+	[id( 3 ), propget, helpstring( "Returnes True/False on whether or not the async extraction operation succeeded." )]
+	HRESULT ExtractionSucceeded( [out, retval] VARIANT_BOOL *status );
+
+	[id( 4 ), propget, helpstring( "Returnes Error Message If Async Extraction Operation Failes." )]
+	HRESULT ExtractionErrorMessage( [out, retval] BSTR *error_message );
+
+	[id( 5 ), helpstring( "Get's progress in % (0-100) of completed work." )]
+	HRESULT GetExtractionProgressPercent( [out, retval] long *progress_value );
+};
+[
+	object,
+	uuid( 2A42810A-B410-42FF-B4BB-E648B373DDB8 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFAacEncoder : IDispatch
+{
+	[id( 1 ), helpstring( "" )]
+	HRESULT Encode( [in] INCFEncoderParams* pINCFEncoderParams, [in] INCFAacTag *pINCFAacTag, [in] BSTR in_filename, [in] BSTR out_filename, [in] VARIANT_BOOL async );
+
+	[id( 2 ), propget, helpstring( "Returnes True when async extraction operation completes.(success or error)." )]
+	HRESULT ExtractionFinished( [out, retval] VARIANT_BOOL *status );
+
+	[id( 3 ), propget, helpstring( "Returnes True/False on whether or not the async extraction operation succeeded." )]
+	HRESULT ExtractionSucceeded( [out, retval] VARIANT_BOOL *status );
+
+	[id( 4 ), propget, helpstring( "Returnes Error Message If Async Extraction Operation Failes." )]
+	HRESULT ExtractionErrorMessage( [out, retval] BSTR *error_message );
+
+	[id( 5 ), helpstring( "Get's progress in % (0-100) of completed work." )]
+	HRESULT GetExtractionProgressPercent( [out, retval] long *progress_value );
+};
+[
+	object,
+	uuid( 812F9470-CA37-46A4-812A-54D9232BD6FD ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFWavEncoder : IDispatch
+{
+	[id( 1 ), helpstring( "" )]
+	HRESULT Encode( [in] INCFEncoderParams* pINCFEncoderParams, [in] BSTR in_filename, [in] BSTR out_filename, [in] VARIANT_BOOL async );
+
+	[id( 2 ), helpstring( "Encode to IStream." )]
+	HRESULT EncodeToStream( [in] INCFEncoderParams* pINCFEncoderParams, [in] BSTR in_filename, [in] INCFStream* pINCFStream );
+
+	[id( 3 ), propget, helpstring( "Returnes True when async extraction operation completes.(success or error)." )]
+	HRESULT ExtractionFinished( [out, retval] VARIANT_BOOL *status );
+
+	[id( 4 ), propget, helpstring( "Returnes True/False on whether or not the async extraction operation succeeded." )]
+	HRESULT ExtractionSucceeded( [out, retval] VARIANT_BOOL *status );
+
+	[id( 5 ), propget, helpstring( "Returnes Error Message If Async Extraction Operation Failes." )]
+	HRESULT ExtractionErrorMessage( [out, retval] BSTR *error_message );
+
+	[id( 6 ), helpstring( "Get's progress in % (0-100) of completed work." )]
+	HRESULT GetExtractionProgressPercent( [out, retval] long *progress_value );
+
+	[id( 7 ), helpstring( "Write wave header to byte pointer." )]
+	HRESULT WriteWaveHeader( [in] INCFEncoderParams* pINCFEncoderParams, [in] long fileSize, [in] BYTE* pWaveHeader );
+
+	[id( 8 ), helpstring( "Write wave header to stream." )]
+	HRESULT WriteWaveHeaderToStream( [in] INCFEncoderParams* pINCFEncoderParams, [in] long fileSize, [in] INCFStream* pINCFStream );
+};
+
+
+
+typedef
+[
+	uuid( 009CADE4-9AF5-459C-A17B-8B1F3B1CAB7D ),
+	helpstring( "AudioPlayer status." ),
+	v1_enum
+]
+enum AudioPlayerStatus
+{
+	Uninitialized = 0,
+	Initialized = 1,
+	Loading = 2,
+	Loaded = 4,
+	Playing = 8,
+	Paused = 16,
+	Stopped = 32,
+	Closed = 64,
+	Error = 128
+} AudioPlayerStatus;
+
+[
+	object,
+	uuid( 02F186E7-BA8D-4A10-AC72-FEB82B85171A ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFAudioPlayer : IDispatch
+{
+	[id( 1 ), helpstring( "Initializes the audio player. Must be called first." )]
+	HRESULT Initialize( );
+
+	[id( 2 ), helpstring( "Plays an audio media object." )]
+	HRESULT Load( [in] BSTR mediaObject );
+
+	[id( 3 ), helpstring( "Plays an audio media object." )]
+	HRESULT Play( );
+
+	[id( 4 ), helpstring( "Pauses audio playback." )]
+	HRESULT Pause( );
+
+	[id( 5 ), helpstring( "Resume audio playback." )]
+	HRESULT Resume( );
+
+	[id( 6 ), helpstring( "Stops audio playback." )]
+	HRESULT Stop( );
+
+	[id( 7 ), helpstring( "Closes the audio player." )]
+	HRESULT Close( );
+
+	[id( 8 ), helpstring( "Get presentation clock time ms" )]
+	HRESULT GetPlayedDuration( [out, retval] long* timeMs );
+
+	[id( 9 ), helpstring( "Get presentation clock time ms" )]
+	HRESULT GetDuration( [out, retval] long* timeMs );
+
+	[id( 10 ), helpstring( "Get master volume." ), propget]
+	HRESULT VolumeLevel( [out, retval] long* volume );
+
+	[id( 10 ), helpstring( "Put master volume." ), propput]
+	HRESULT VolumeLevel( [in] long volume );
+
+	//[id(11), helpstring("Get mute."), propget]
+	//HRESULT Mute( [out, retval] VARIANT_BOOL* mute );
+
+	//[id(11), helpstring("Put mute."), propput]
+	//HRESULT Mute( [in] VARIANT_BOOL mute );
+
+	[id( 12 ), helpstring( "" ), propget]
+	HRESULT Status( [out, retval] AudioPlayerStatus* status );
+
+	[id( 13 ), helpstring( "" ), propget]
+	HRESULT Metadata( [out, retval] INCFAudioTag** pINCFAudioTag );
+};
+[
+	uuid( EA63225A-E434-407D-AFB9-922CCD72E640 ),
+	version( 1.0 ),
+]
+library ItSoftwareNCFAudioLib
+{
+	importlib( "stdole2.tlb" );
+
+	[
+		uuid( 7C01ACFA-59D2-4539-9D86-288A215423D8 )
+	]
+	coclass NCFAudioCD
+	{
+		[default] interface INCFAudioCD;
+	};
+	[
+		uuid( 729E5AEA-46E7-4E19-AF0A-7CC7EEC1A969 )
+	]
+	coclass NCFWmaEncoder
+	{
+		[default] interface INCFWmaEncoder;
+	};
+	[
+		uuid( 9DAC6DFA-6D9C-4B1D-83C2-8DE93E771DD0 )
+	]
+	coclass NCFMp3Encoder
+	{
+		[default] interface INCFMp3Encoder;
+	};
+	[
+		uuid( 50D87872-E0E2-4470-9DE0-48FF297E0584 )
+	]
+	coclass NCFAacEncoder
+	{
+		[default] interface INCFAacEncoder;
+	};
+	[
+		uuid( 969620D5-C89F-49F7-BFB3-0D9E3A0C6186 )
+	]
+	coclass NCFWavEncoder
+	{
+		[default] interface INCFWavEncoder;
+	};
+	[
+		uuid( 4783B9EE-AB96-4105-9C5E-496F74E26AAE )
+	]
+	coclass NCFEncoderParams
+	{
+		[default] interface INCFEncoderParams;
+	};
+	[
+		uuid( 611250A1-4A6C-4FAC-B72C-B849A5F33110 )
+	]
+	coclass NCFWmaTag
+	{
+		[default] interface INCFWmaTag;
+	};
+
+	[
+		uuid( 45AEBF1B-D4F0-47A2-A7DD-87376B187E0C )
+	]
+	coclass NCFMp3Tag
+	{
+		[default] interface INCFMp3Tag;
+	};
+
+	[
+		uuid( B05F9A1F-8B15-4A79-90BD-7C68D9392527 )
+	]
+	coclass NCFAacTag
+	{
+		[default] interface INCFAacTag;
+	};
+	[
+		uuid( 6EA48EAF-F717-4CF9-BD74-71C3E5E2092A )
+	]
+	coclass NCFMp3Genre
+	{
+		[default] interface INCFMp3Genre;
+	};
+	[
+		uuid( E5743312-7214-4C6C-A33C-732E82BC5AB7 )
+	]
+	coclass NCFAudioPlayer
+	{
+		[default] interface INCFAudioPlayer;
+	};
+};
+

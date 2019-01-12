@@ -1,0 +1,541 @@
+// ItSoftwareNCFIO.idl : IDL source for ItSoftware.NCF.IO
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFIO.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "../Include/INCFCollectionList.idl";
+#include "../Include/INCFStream.idl";
+
+[
+	object,
+	uuid( A3713788-8456-4F2A-A32A-C066053F3D0E ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFPath : IDispatch
+{
+	/*
+	"c:\temp\file.txt"
+	[c] - volume
+	[c:\temp\] - normalized path
+	[file.txt] - filename
+	[file] - file base name
+	[txt]  - file extension
+	[c:\temp\file.txt] (or any type of pathvalue) - full_path
+	*/
+	[id( 1 ), helpstring( "Normalize a path by securing an ending '\'." )]
+	HRESULT NormalizePath( [in] BSTR path,
+		[out, retval] BSTR* new_path );
+
+	[id( 2 ), helpstring( "Normalize an file extension string by removing the '.' prefix." )]
+	HRESULT NormalizeExtension( [in] BSTR extension,
+		[out, retval] BSTR* new_extension );
+
+	[id( 3 ), helpstring( "Extracts the path of full path." )]
+	HRESULT ExtractPath( [in] BSTR full_path,
+		[out, retval] BSTR* path );
+
+	[id( 4 ), helpstring( "Extracts the file extension from a full path." )]
+	HRESULT ExtractExtension( [in] BSTR full_path,
+		[out, retval] BSTR* extension );
+
+	[id( 5 ), helpstring( "Extracts the filname from a full path." )]
+	HRESULT ExtractFilename( [in] BSTR full_path,
+		[out, retval] BSTR* filename );
+
+	[id( 6 ), helpstring( "Extracts a files base filename from a full path." )]
+	HRESULT ExtractBaseFilename( [in] BSTR full_path,
+		[out, retval] BSTR* base_filename );
+
+	[id( 7 ), helpstring( "Replace a filename in a full path." )]
+	HRESULT ReplaceFilename( [in] BSTR full_path,
+		[in] BSTR new_file_name,
+		[out, retval] BSTR* new_full_path );
+
+	[id( 8 ), helpstring( "Replace the path part of a full path." )]
+	HRESULT ReplacePath( [in] BSTR full_path,
+		[in] BSTR new_path,
+		[out, retval] BSTR* new_full_path );
+
+	[id( 9 ), helpstring( "Extracts a files base filename from a full path." )]
+	HRESULT ReplaceBaseFilename( [in] BSTR full_path,
+		[in] BSTR new_base_filename,
+		[out, retval] BSTR* new_full_path );
+
+	[id( 10 ), helpstring( "Replace the extension part of a full path." )]
+	HRESULT ReplaceFileExtension( [in] BSTR full_path,
+		[in] BSTR new_file_extension,
+		[out, retval] BSTR* new_full_path );
+
+	[id( 11 ), helpstring( "Replace the volume part of a full path." )]
+	HRESULT ReplaceVolume( [in] BSTR full_path,
+		[in] BSTR new_volume,
+		[out, retval] BSTR* new_full_path );
+
+	[id( 12 ), helpstring( "Split a full path into it's components." )]
+	HRESULT SplitFullPath( [in] BSTR full_path,
+		[in, out] BSTR *volume,
+		[in, out] BSTR *path,
+		[in, out] BSTR *base_filename,
+		[out, retval] BSTR *file_extension );
+
+	[id( 13 ), helpstring( "Extracts the volume." )]
+	HRESULT ExtractVolume( [in] BSTR full_path,
+		[out, retval] BSTR *volume );
+};
+[
+	object,
+	uuid( 6F8876A9-CED1-4AD3-A3DE-5ACF1036EA85 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFUrl : IDispatch
+{
+	/*
+	"http://www.microsoft.com:80/index/index.asp" - full_url
+	[http] - protocol
+	[www.microsoft.com] - domain
+	[:80] - port
+	[/index/] - normalized path
+	[index.asp] - filename
+	[index] - file base name
+	[asp]  - file extension
+
+	<protocol>://<site/domain>:<port>/<path>/<file>
+	*/
+	[id( 1 ), helpstring( "Extracts the protocol." )]
+	HRESULT ExtractProtocol( [in] BSTR url,
+		[out, retval] BSTR *protocol );
+
+	[id( 2 ), helpstring( "Extracts the domain." )]
+	HRESULT ExtractDomain( [in] BSTR url,
+		[out, retval] BSTR* domain );
+
+	[id( 3 ), helpstring( "Extracts the file extension from a full path." )]
+	HRESULT ExtractPort( [in] BSTR url,
+		[out, retval] BSTR* port );
+
+	[id( 4 ), helpstring( "Extracts the normalized path." )]
+	HRESULT ExtractPath( [in] BSTR url,
+		[out, retval] BSTR* path );
+
+	[id( 5 ), helpstring( "Extracts a files base filename from a full path." )]
+	HRESULT ExtractFilename( [in] BSTR url,
+		[out, retval] BSTR* filename );
+
+	[id( 6 ), helpstring( "Split a full path into it's components." )]
+	HRESULT SplitURL( [in] BSTR url,
+		[in, out] BSTR *protocol,
+		[in, out] BSTR *domain,
+		[in, out] BSTR *port,
+		[in, out] BSTR *path,
+		[out, retval] BSTR *filename );
+
+	[id( 7 ), helpstring( "Encodes a url string to url encoding." )]
+	HRESULT Encode( [in] BSTR url, [out, retval] BSTR* urlEncoded );
+
+	[id( 8 ), helpstring( "Decodes a url string to url encoding." )]
+	HRESULT Decode( [in] BSTR url, [out, retval] BSTR* urlDecoded );
+};
+[
+	object,
+	uuid( 364A7EE0-8A6A-47E5-89E9-9979A4E50FC6 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFStringStream : IDispatch
+{
+	[id( 1 ), helpstring( "Write line of string." )]
+	HRESULT WriteLine( [in] BSTR text );
+
+	[id( 2 ), helpstring( "Write string." )]
+	HRESULT WriteString( [in] BSTR text );
+
+	[id( 3 ), helpstring( "Read line of string." )]
+	HRESULT ReadLine( [in] BSTR* pText );
+
+	[id( 4 ), helpstring( "Read all lines of string." )]
+	HRESULT ReadAllLines( [out, retval] INCFCollectionList** pINCFCollectionList );
+
+	[id( 5 ), helpstring( "Set current position." ), propput]
+	HRESULT CurrentReadPosition( [in] long position );
+
+	[id( 5 ), helpstring( "Get current position." ), propget]
+	HRESULT CurrentReadPosition( [out, retval] long* position );
+
+	[id( 6 ), helpstring( "Set current position." ), propput]
+	HRESULT CurrentWritePosition( [in] long position );
+
+	[id( 6 ), helpstring( "Get current position." ), propget]
+	HRESULT CurrentWritePosition( [out, retval] long* position );
+
+	[id( 7 ), helpstring( "Set current position." )]
+	HRESULT Close( );
+
+	[id( 8 ), helpstring( "Returnes the length of the file." ), propget]
+	HRESULT Length( [out, retval]long* length );
+};
+
+[
+	object,
+	uuid( 5968D6DD-023F-4E7F-A001-1242A7AD8610 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFFileStream : INCFStream
+{
+	/*[id(1), helpstring("Write file data.")]
+	HRESULT Write([in] BYTE* pData, [in] long length);
+
+	[id(2), helpstring("Read file data.")]
+	HRESULT Read([in] BYTE* pData, [in] long length);
+
+	[id(3), helpstring("Set current position."), propput]
+	HRESULT CurrentReadPosition([in] long position);
+
+	[id(3), helpstring("Get current position."), propget]
+	HRESULT CurrentReadPosition([out, retval] long* position);
+
+	[id(4), helpstring("Set current position."), propput]
+	HRESULT CurrentWritePosition([in] long position);
+
+	[id(4), helpstring("Get current position."), propget]
+	HRESULT CurrentWritePosition([out, retval] long* position);
+
+	[id(5), helpstring("Set current position.")]
+	HRESULT Close();
+
+	[id(6), helpstring("Returnes the length of the file."), propget]
+	HRESULT Length([out, retval] long* length);
+
+	[id(6), helpstring("Sets the length of the file."), propput]
+	HRESULT Length([in] long length);*/
+};
+
+[
+	object,
+	uuid( 9545C638-EDE8-499F-AE37-ECF231C9E111 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFMemoryStream : INCFStream
+{
+	/*[id(1), helpstring("Write file data.")]
+	HRESULT Write([in] BYTE* pData, [in] long length);
+
+	[id(2), helpstring("Read file data.")]
+	HRESULT Read([in] BYTE* pData, [in] long length);
+
+	[id(3), helpstring("Set current position."), propput]
+	HRESULT CurrentReadPosition([in] long position);
+
+	[id(3), helpstring("Get current position."), propget]
+	HRESULT CurrentReadPosition([out, retval] long* position);
+
+	[id(4), helpstring("Set current position."), propput]
+	HRESULT CurrentWritePosition([in] long position);
+
+	[id(4), helpstring("Get current position."), propget]
+	HRESULT CurrentWritePosition([out, retval] long* position);
+
+	[id(5), helpstring("Close stream. Can only read from it now.")]
+	HRESULT Close();
+
+	[id(6), helpstring("Returnes the length of the file."), propget]
+	HRESULT Length([out, retval] long* length);
+
+	[id(6), helpstring("Sets the length of the file."), propput]
+	HRESULT Length([in] long length);*/
+};
+
+[
+	object,
+	uuid( 1B5CE1F3-D493-4715-937D-D682E1040A43 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFFile : IDispatch
+{
+	[id( 1 ), helpstring( "Create or open a file." )]
+	HRESULT CreateOrOpen( [in] BSTR filename, [out, retval] INCFFileStream** ppINCFFileStream );
+
+	[id( 2 ), helpstring( "Create or open a file." )]
+	HRESULT CreateOrOpenText( [in] BSTR filename, [out, retval] INCFStringStream** ppINCFStringStream );
+
+	[id( 3 ), helpstring( "Create new file. Will delete existing first." )]
+	HRESULT CreateNew( [in]BSTR filename, [out, retval] INCFFileStream** ppINCFFileStream );
+
+	[id( 4 ), helpstring( "Create new file. Will delete existing first." )]
+	HRESULT CreateNewText( [in]BSTR filename, [out, retval] INCFStringStream** ppINCFStringStream );
+
+	[id( 5 ), helpstring( "Check if file exists." )]
+	HRESULT Exists( [in]BSTR filename, [out, retval] VARIANT_BOOL* status );
+
+	[id( 6 ), helpstring( "Delete file." )]
+	HRESULT Delete( [in]BSTR filename );
+
+	[id( 7 ), helpstring( "Enumerate files in given directory." )]
+	HRESULT EnumerateFiles( [in]BSTR directory, [in] BSTR pattern, [out, retval] INCFCollectionList** ppINCFCollectionList );
+
+	[id( 8 ), helpstring( "Returnes a temporary filename with given extension." )]
+	HRESULT GetTempFilename( [in] BSTR extension, [out, retval] BSTR* filename );
+};
+
+[
+	object,
+	uuid( F9E1A9EF-FFB4-4AE7-85A2-A9E1689683A1 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFDirectory : IDispatch
+{
+	[id( 1 ), helpstring( "Delete file." )]
+	HRESULT Create( [in] BSTR directory );
+
+	[id( 2 ), helpstring( "Delete file." )]
+	HRESULT Delete( [in] BSTR directory );
+
+	[id( 3 ), helpstring( "Delete file." )]
+	HRESULT Exists( [in]BSTR directory, [out, retval] VARIANT_BOOL* status );
+
+	[id( 4 ), helpstring( "Delete file." )]
+	HRESULT EnumerateDirectories( [in]BSTR directory, [out, retval]INCFCollectionList** ppINCFCollectionList );
+
+	[id( 5 ), helpstring( "Returnes temporary directory." )]
+	HRESULT GetTempDirectory( [out, retval] BSTR* directory );
+
+	[id( 6 ), helpstring( "Returnes ProgramData directory." )]
+	HRESULT GetProgramDataDirectory( [out, retval] BSTR* directory );
+};
+
+
+
+
+[
+	object,
+	uuid( 075034B4-2DEC-47C3-BEC2-EDFC45F61950 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFNetworkResource : IDispatch
+{
+	[id( 1 ), helpstring( "" ), propput]
+	HRESULT Scope( [in] long scope );
+
+	[id( 1 ), helpstring( "" ), propget]
+	HRESULT Scope( [out, retval] long* scope );
+
+	[id( 2 ), helpstring( "" ), propput]
+	HRESULT Type( [in] long type );
+
+	[id( 2 ), helpstring( "" ), propget]
+	HRESULT Type( [out, retval] long* type );
+
+	[id( 3 ), helpstring( "" ), propput]
+	HRESULT DisplayType( [in] long displayType );
+
+	[id( 3 ), helpstring( "" ), propget]
+	HRESULT DisplayType( [out, retval] long* displayType );
+
+	[id( 4 ), helpstring( "" ), propput]
+	HRESULT Usage( [in] long usage );
+
+	[id( 4 ), helpstring( "" ), propget]
+	HRESULT Usage( [out, retval] long* usage );
+
+	[id( 5 ), helpstring( "" ), propput]
+	HRESULT LocalName( [in] BSTR localName );
+
+	[id( 5 ), helpstring( "" ), propget]
+	HRESULT LocalName( [out, retval] BSTR* localName );
+
+	[id( 6 ), helpstring( "" ), propput]
+	HRESULT RemoteName( [in] BSTR remoteName );
+
+	[id( 6 ), helpstring( "" ), propget]
+	HRESULT RemoteName( [out, retval] BSTR* remoteName );
+
+	[id( 7 ), helpstring( "" ), propput]
+	HRESULT Comment( [in] BSTR comment );
+
+	[id( 7 ), helpstring( "" ), propget]
+	HRESULT Comment( [out, retval] BSTR* comment );
+
+	[id( 8 ), helpstring( "" ), propput]
+	HRESULT Provider( [in] BSTR provider );
+
+	[id( 8 ), helpstring( "" ), propget]
+	HRESULT Provider( [out, retval] BSTR* provider );
+};
+
+[
+	object,
+	uuid( 5181F2B6-7417-482A-A907-C5465133B2C7 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFNetwork : IDispatch
+{
+	[id( 1 ), helpstring( "Connects to a UNC drive/share on the local network." )]
+	HRESULT ConnectUNC( [in]BSTR remoteName, [in] BSTR username, [in] BSTR password, [in] VARIANT_BOOL rememberOnLogin, [out, retval] VARIANT_BOOL* status );
+
+	[id( 2 ), helpstring( "Enumerates all network resources." )]
+	HRESULT EnumerateAllNetworkResources( [out, retval] INCFCollectionList** ppINCFCollectionList );
+
+	[id( 3 ), helpstring( "Enumerates all network resources." )]
+	HRESULT EnumerateNetworkResources( [in] INCFNetworkResource* pINCFNetworkResource, [out, retval] INCFCollectionList** ppINCFCollectionList );
+
+	[id( 4 ), helpstring( "Enumerate all network disks." )]
+	HRESULT EnumerateNetworkShares( [in] BSTR remoteName, [out, retval] INCFCollectionList** ppINCFCollectionList );
+};
+
+
+[
+	object,
+	uuid( AFFFF835-169A-434B-AD2E-65AB75B01D0C ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFNetworkShare : IDispatch
+{
+	[id( 1 ), helpstring( "" ), propput]
+	HRESULT NetName( [in] BSTR netName );
+
+	[id( 1 ), helpstring( "" ), propget]
+	HRESULT NetName( [out, retval] BSTR* netName );
+
+	[id( 2 ), helpstring( "" ), propput]
+	HRESULT Type( [in] DWORD type );
+
+	[id( 2 ), helpstring( "" ), propget]
+	HRESULT Type( [out, retval] DWORD* type );
+
+	[id( 3 ), helpstring( "" ), propput]
+	HRESULT Remark( [in] BSTR remark );
+
+	[id( 3 ), helpstring( "" ), propget]
+	HRESULT Remark( [out, retval] BSTR* remark );
+
+	[id( 4 ), helpstring( "" ), propput]
+	HRESULT Permissions( [in] DWORD permissions );
+
+	[id( 4 ), helpstring( "" ), propget]
+	HRESULT Permissions( [out, retval] DWORD* permissions );
+
+	[id( 5 ), helpstring( "" ), propput]
+	HRESULT MaxUses( [in] DWORD maxUses );
+
+	[id( 5 ), helpstring( "" ), propget]
+	HRESULT MaxUses( [out, retval] DWORD* maxUses );
+
+	[id( 6 ), helpstring( "" ), propput]
+	HRESULT CurrentUses( [in] DWORD currentUses );
+
+	[id( 6 ), helpstring( "" ), propget]
+	HRESULT CurrentUses( [out, retval] DWORD* currentUses );
+
+	[id( 7 ), helpstring( "" ), propput]
+	HRESULT Path( [in] BSTR path );
+
+	[id( 7 ), helpstring( "" ), propget]
+	HRESULT Path( [out, retval] BSTR* path );
+
+	[id( 8 ), helpstring( "" ), propput]
+	HRESULT Password( [in] BSTR password );
+
+	[id( 8 ), helpstring( "" ), propget]
+	HRESULT Password( [out, retval] BSTR* password );
+
+};
+[
+	uuid( CE56C292-257B-4680-9026-0F4E43D79CBD ),
+	version( 1.0 ),
+]
+library ItSoftwareNCFIOLib
+{
+	importlib( "stdole2.tlb" );
+	[
+		uuid( C2BC2F82-ABD5-4CC6-95F4-2742E5DB641E )
+	]
+	coclass NCFFile
+	{
+		[default] interface INCFFile;
+	};
+	[
+		uuid( 53DB178E-06A6-477A-A91A-C1CEF8185F43 )
+	]
+	coclass NCFDirectory
+	{
+		[default] interface INCFDirectory;
+	};
+	[
+		uuid( 72894C33-C2E7-4F08-98FF-D348741C3E8D )
+	]
+	coclass NCFFileStream
+	{
+		[default] interface INCFFileStream;
+	};
+	[
+		uuid( 616646F6-FC54-4A7B-9639-227F1D9740BE )
+	]
+	coclass NCFStringStream
+	{
+		[default] interface INCFStringStream;
+	};
+	[
+		uuid( 9D9DCBCB-F2ED-4648-A953-B54E5FBA3CFE )
+	]
+	coclass NCFMemoryStream
+	{
+		[default] interface INCFMemoryStream;
+	};
+	[
+		uuid( 65DE533B-16D7-4DD5-B58E-F1887105EB4F )
+	]
+	coclass NCFUrl
+	{
+		[default] interface INCFUrl;
+	};
+	[
+		uuid( A5A4D7E8-6C84-49F8-BFA5-637CD76528BC )
+	]
+	coclass NCFPath
+	{
+		[default] interface INCFPath;
+	};
+	[
+		uuid( 40999C16-B1BB-446D-866C-189D1BC64F04 )
+	]
+	coclass NCFNetwork
+	{
+		[default] interface INCFNetwork;
+	};
+	[
+		uuid( 19007660-76CE-457B-B5B3-517BCFB44840 )
+	]
+	coclass NCFNetworkResource
+	{
+		[default] interface INCFNetworkResource;
+	};
+	[
+		uuid( F47C2C85-3CA9-4DC1-8A28-2A5C832C2873 )
+	]
+	coclass NCFNetworkShare
+	{
+		[default] interface INCFNetworkShare;
+	};
+};
+

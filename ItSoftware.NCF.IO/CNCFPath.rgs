@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.Path.1 = s 'NCFPath Class'
+	{
+		CLSID = s '{A5A4D7E8-6C84-49F8-BFA5-637CD76528BC}'
+	}
+	ItSoftware.NCF.Path = s 'NCFPath Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.Path.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A5A4D7E8-6C84-49F8-BFA5-637CD76528BC} = s 'NCFPath Class'
+		{
+			ProgID = s 'ItSoftware.NCF.Path.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.Path'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{CE56C292-257B-4680-9026-0F4E43D79CBD}'
+			Version = s '1.0'
+		}
+	}
+}

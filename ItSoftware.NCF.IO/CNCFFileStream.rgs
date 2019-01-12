@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.FileStream.1 = s 'NCFFileStream Class'
+	{
+		CLSID = s '{72894C33-C2E7-4F08-98FF-D348741C3E8D}'
+	}
+	ItSoftware.NCF.FileStream = s 'NCFFileStream Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.FileStream.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {72894C33-C2E7-4F08-98FF-D348741C3E8D} = s 'NCFFileStream Class'
+		{
+			ProgID = s 'ItSoftware.NCF.FileStream.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.FileStream'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{CE56C292-257B-4680-9026-0F4E43D79CBD}'
+			Version = s '1.0'
+		}
+	}
+}

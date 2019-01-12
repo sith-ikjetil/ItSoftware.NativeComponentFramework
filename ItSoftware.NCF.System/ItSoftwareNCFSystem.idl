@@ -1,0 +1,589 @@
+﻿// ItSoftwareNCFSystem.idl : IDL source for ItSoftware.NCF.System
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFSystem.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "../Include/INCFCollectionList.idl";
+#include "../Include/INCFCollectionMap.idl";
+
+
+typedef
+[
+	uuid( 73BD090B-029F-48ae-A155-28AF31522ABA ),
+	helpstring( "Negative Number Modes." ),
+	v1_enum
+]
+enum ENEGNUMBERMODE
+{
+	ENEGN_LEFTPAR_NUMBER_RIGHTPAR = 0,//(1.1)
+	ENEGN_NEGSIGN_NUMBER = 1,//-1.1
+	ENEGN_NEGSIGN_SPACE_NUMBER = 2,//- 1.1
+	ENEGN_NUMBER_NEGSIGN = 3,//1.1-
+	ENEGN_NUMBER_SPACE_NEGSIGN = 4	//1.1 -
+} ENEGNUMBERMODE;
+
+typedef
+[
+	uuid( E94E11AD-4683-41bc-B9EA-2F567EFA3983 ),
+	helpstring( "Negative Currency Modes." ),
+	v1_enum
+]
+enum ENEGCURRENCYMODE
+{
+	ENEGC_LEFTPAR_MONSYM_NUMBER_RIGHTPAR = 0,	//($1.1)
+	ENEGC_NEGSIG_MONSYM_NUMBER = 1,	//-$1.1 
+	ENEGC_MONSYM_NEGSIG_NUMBER = 2,	//$-1.1 
+	ENEGC_MONSYM_NUMBER_NEGSIG = 3,	//$1.1- 
+	ENEGC_LEFTPAR_NUMBER_MONSYM_RIGHTPAR = 4,	//(1.1$) 
+	ENEGC_NEGSIG_NUMBER_MONSYM = 5,	//-1.1$ 
+	ENEGC_NUMBER_NEGSIG_MONSYM = 6,	//1.1-$ 
+	ENEGC_NUMBER_MONSYM_NEGSIG = 7,	//1.1$- 
+	ENEGC_NEGSIG_NUMBER_SPACE_MONSYM = 8,	//-1.1 $ 
+	ENEGC_NEGSIG_MONSYM_SPACE_NUMBER = 9,	//-$ 1.1 
+	ENEGC_NUMBER_SPACE_MONSYM_NEGSIG = 10,	//1.1 $- 
+	ENEGC_MONSYM_SPACE_NUMBER_NEGSIG = 11,	//$ 1.1- 
+	ENEGC_MONSYM_SPACE_NEGSIG_NUMBER = 12,	//$ -1.1 
+	ENEGC_MONSYM_NUMBER_NEGSIG_SPACE_MONSYM = 13,	//1.1- $ 
+	ENEGC_LEFTPAR_MONSYM_SPACE_NUMBER_RIGHTPAR = 14,	//($ 1.1)
+	ENEGC_LEFTPAR_NUMBER_SPACE_MONSYM_RIGHTPAR = 15	//(1.1 $) 
+} ENEGCURRENCYMODE;
+
+
+
+typedef
+[
+	uuid( 636194BC-5CC1-4436-95A5-FD4FE9E23A21 ),
+	helpstring( "Positive Currency Modes." ),
+	v1_enum
+]
+enum EPOSCURRENCYMODE
+{
+	EPOSC_PREFIX_NOSEP = 0, //$1.1 
+	EPOSC_SUFFIX_NOSEP = 1, //1.1$ 
+	EPOSC_PREFIX_SPACE = 2, //$ 1.1 
+	EPOSC_SUFFIX_SPACE = 3  //1.1 $ 
+} EPOSCURRENCYMODE;
+
+[
+	object,
+	uuid( 3F2FC46F-4FDA-45BF-90A5-CA5EB0859EF8 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFString : IDispatch
+{
+	[id( 1 ), helpstring( "Cuts <length> number of characters of the left side of <source_string>." )]
+	HRESULT CutLeft( [in] BSTR source_string, [in] long length, [out, retval] BSTR *result_string );
+
+	[id( 2 ), helpstring( "Cuts <length> number of characters from <start_index> and to the right of <source_string>." )]
+	HRESULT CutMid( [in] BSTR source_string, [in] long start_index, [in] long length, [out, retval] BSTR *result_string );
+
+	[id( 3 ), helpstring( "Cuts <length> number of characters form right side of <source_string>." )]
+	HRESULT CutRight( [in] BSTR source_string, [in] long length, [out, retval] BSTR *result_string );
+
+	[id( 4 ), helpstring( "Returns <length> number of characters from left of <source_string>." )]
+	HRESULT Left( [in] BSTR source_string, [in] long length, [out, retval] BSTR *result_string );
+
+	[id( 5 ), helpstring( "Returns <length> number of characters from <start_index> and to the right of <source_string>." )]
+	HRESULT Mid( [in] BSTR source_string, [in] long start_index, [in] long length, [out, retval] BSTR *result_string );
+
+	[id( 6 ), helpstring( "Returnes <length> number of characters from the right of <source_string>." )]
+	HRESULT Right( [in] BSTR source_string, [in] long length, [out, retval] BSTR *result_string );
+
+	[id( 7 ), helpstring( "Returnes a string with all leftmost characters in <source_string> that are also in <char_set>." )]
+	HRESULT SpanIncluding( [in] BSTR source_string, [in] BSTR char_set, [out, retval] BSTR *result_string );
+
+	[id( 8 ), helpstring( "Returnes a string with all leftmost characters in <source_string> that are not in <char_set>." )]
+	HRESULT SpanExcluding( [in] BSTR source_string, [in] BSTR char_set, [out, retval] BSTR *result_string );
+
+	[id( 9 ), helpstring( "Converts <source_string> to all uppercase characters." )]
+	HRESULT ToUpperCase( [in] BSTR source_string, [out, retval] BSTR *result_string );
+
+	[id( 10 ), helpstring( "Converts <source_string> to all lowercase characters." )]
+	HRESULT ToLowerCase( [in] BSTR source_string, [out, retval] BSTR *result_string );
+
+	[id( 11 ), helpstring( "Reverses <source_string>." )]
+	HRESULT Reverse( [in] BSTR source_string, [out, retval] BSTR *result_string );
+
+	[id( 12 ), helpstring( "Replaces all occurences of <replace_string> in <source_string> with <replacement_string>." )]
+	HRESULT Replace( [in] BSTR source_string, [in] BSTR replace_string, [in] BSTR replacement_string, [out, retval] BSTR *result_string );
+
+	[id( 13 ), helpstring( "Replaces a section of <source_string> with <replace_string>." )]
+	HRESULT ReplaceSection( [in] BSTR source_string, [in] long start_index, [in] long length, [in] BSTR replacement_string, [out, retval] BSTR *result_string );
+
+	[id( 14 ), helpstring( "Inserts <insert_string> into <source_string> before <index>." )]
+	HRESULT Insert( [in] BSTR source_string, [in] BSTR insert_string, [in] long index, [out, retval] BSTR *result_string );
+
+	[id( 15 ), helpstring( "Converts <value> to a string." )]
+	HRESULT ToString( [in] VARIANT value, [out, retval] BSTR *result_string );
+
+	[id( 16 ), helpstring( "Returnes the lengt of <source_string>." )]
+	HRESULT GetLength( [in] BSTR source_string, [out, retval] long *result_value );
+
+	[id( 17 ), helpstring( "Returnes the string found between the first pair of <string1> and <string2> in <source_string>." )]
+	HRESULT StringBetweenStrings( [in] BSTR source_string, [in] BSTR string1, [in] BSTR string2, [out, retval] BSTR *result_string );
+
+	[id( 18 ), helpstring( "Returnes the string found between the <string_pair_number> pair of <string1> and <string2> in <source_string>." )]
+	HRESULT StringBetweenStringsEx( [in] BSTR source_string, [in] BSTR string1, [in] BSTR string2, [in] long string_pair_number, [out, retval] BSTR *result_value );
+
+	[id( 19 ), helpstring( "Returnes the string before the first occurence of <search_string> in <source_string>." )]
+	HRESULT StringBeforeString( [in] BSTR source_string, [in] BSTR search_string, [out, retval] BSTR *result_string );
+
+	[id( 20 ), helpstring( "Returnes the string after the first occurence of <search_string> in <source_string>." )]
+	HRESULT StringAfterString( [in] BSTR source_string, [in] BSTR search_string, [out, retval] BSTR *result_string );
+
+	[id( 21 ), helpstring( "Appends <append_string> to <source_string>." )]
+	HRESULT Append( [in] BSTR source_string, [in] BSTR append_string, [out, retval] BSTR *result_string );
+
+	[id( 22 ), helpstring( "Compares <source_string1> and <source_string2> by case sensitivity from <case_sensitivity>." )]
+	HRESULT Compare( [in] BSTR source_string1, [in] BSTR source_string2, [in] VARIANT_BOOL case_sensitive, [out, retval] long *result_value );
+
+	[id( 23 ), helpstring( "Creates a copy of <source_string>." )]
+	HRESULT Copy( [in] BSTR source_string, [out, retval] BSTR *result_string );
+
+	[id( 24 ), helpstring( "Trims whitespaces(' ') from <source_string> on both sides." )]
+	HRESULT Trim( [in] BSTR source_string, [out, retval] BSTR *result_string );
+
+	[id( 25 ), helpstring( "Trims whitespaces(' ') from <source_string> on left side." )]
+	HRESULT TrimLeft( [in] BSTR source_string, [out, retval] BSTR *result_string );
+
+	[id( 26 ), helpstring( "Trims whitespaces(' ') from <source_string> on right side." )]
+	HRESULT TrimRight( [in] BSTR source_string, [out, retval] BSTR *result_string );
+
+	[id( 27 ), helpstring( "Trims <trim_characters> from <source_string> on both sides." )]
+	HRESULT TrimEx( [in] BSTR source_string, [in] BSTR trim_characters, [out, retval] BSTR *result_string );
+
+	[id( 28 ), helpstring( "Trims <trim_characters> from <source_string> on left side." )]
+	HRESULT TrimLeftEx( [in] BSTR source_string, [in] BSTR trim_characters, [out, retval] BSTR *result_string );
+
+	[id( 29 ), helpstring( "Trims <trim_characters> from <source_string> on right side." )]
+	HRESULT TrimRightEx( [in] BSTR source_string, [in] BSTR trim_characters, [out, retval] BSTR *result_string );
+
+	[id( 30 ), helpstring( "Finds the number of <substring> strings in <source_string>." )]
+	HRESULT GetSubstringCount( [in] BSTR source_string, [in] BSTR substring, [out, retval] long *result_value );
+
+	[id( 31 ), helpstring( "Splits <source_string> by <delimiter_string>. First part to <result_string> and remainder to <remainder_string>." )]
+	HRESULT Split( [in] BSTR source_string, [in] BSTR delimiter_string, [in, out] BSTR *remainder_string, [out, retval] BSTR *result_string );
+
+	[id( 32 ), helpstring( "Cuts <source_string> or appends multiple <fill_string> to it until it reaches length <length>." )]
+	HRESULT ToFixedLength( [in] BSTR source_string, [in] long length, [in] BSTR fill_string, [out, retval] BSTR *output );
+
+	[id( 33 ), helpstring( "Finds index of first character of <substr> in <source_string>. <result_index> recieves a value of -1 when <substr> is not found." )]
+	HRESULT Find( [in] BSTR source_string, [in] BSTR substr, [out, retval] long *result_index );
+
+	[id( 34 ), helpstring( "Finds index of first character of <substr> in <source_string> beginning at index <last_found_index>. <result_index> recieves a value of -1 when <substr> is not found." )]
+	HRESULT FindNext( [in] BSTR source_string, [in] BSTR substr, [in] long last_found_index, [out, retval] long *result_index );
+
+	[id( 35 ), helpstring( "Finds index of first character of last instance of <substr> in <source_string>. <result_index> recieves a value of -1 when <substr> is not found." )]
+	HRESULT FindReverse( [in] BSTR source_string, [in] BSTR substr, [out, retval] long *result_index );
+
+	[id( 36 ), helpstring( "Finds index of first character of <substr> in <source_string> beginning at <last_found_index> and working in reverse order." )]
+	HRESULT FindReverseNext( [in] BSTR source_string, [in] BSTR substr, [in] long last_found_index, [out, retval] long *result_index );
+
+	[id( 37 ), helpstring( "Finds index of first character in <source_string> that's also in <substr>. <result_index> of -1 means not character in <source_string> was found in <substr>." )]
+	HRESULT FindFirstOf( [in] BSTR source_string, [in] BSTR substr, [out, retval] long *result_index );
+
+	[id( 38 ), helpstring( "Finds index of first character in <source_string> that's not in <substr>. <result_index> of -1 means not character in <source_string> was found in <substr>." )]
+	HRESULT FindFirstNotOf( [in] BSTR source_string, [in] BSTR substr, [out, retval] long *result_index );
+
+	[id( 39 ), helpstring( "Finds index of last character in <source_string> that's also in <substr>. <result_index> of -1 means not character in <source_string> was found in <substr>." )]
+	HRESULT FindLastOf( [in] BSTR source_string, [in] BSTR substr, [out, retval] long *result_index );
+
+	[id( 40 ), helpstring( "Finds index of last character in <source_string> that's not in <substr>. <result_index> of -1 means not character in <source_string> was found in <substr>." )]
+	HRESULT FindLastNotOf( [in] BSTR source_string, [in] BSTR substr, [out, retval] long *result_index );
+
+	[id( 41 ), helpstring( "Creates a new string of length <length> and characters from <fill_string>." )]
+	HRESULT CreateUniform( [in] long length, [in] BSTR fill_string, [out, retval] BSTR *result_string );
+
+	[id( 42 ), helpstring( "Formats the value in <value> according to local number system settings." )]
+	HRESULT GetLocalNumberFormat( [in] VARIANT value, [out, retval] BSTR *result_string );
+
+	[id( 43 ), helpstring( "Formats the value in <value> according to argument settings." )]
+	HRESULT GetNumberFormat( [in] VARIANT value,
+		[in] long num_digits,
+		[in] long grouping,
+		[in] BSTR decimal_sep,
+		[in] BSTR thousand_sep,
+		[in] ENEGNUMBERMODE negative_number_format,
+		[out, retval] BSTR *result_string );
+
+	[id( 44 ), helpstring( "Formats the value in <value> according to local currency system settings." )]
+	HRESULT GetLocalCurrencyFormat( [in] VARIANT value, [out, retval] BSTR *result_string );
+
+	[id( 45 ), helpstring( "Formats the value in <value> according to currency arguments settings." )]
+	HRESULT GetCurrencyFormat( [in] VARIANT value,
+		[in] long num_digits,
+		[in] long grouping,
+		[in] BSTR decimal_sep,
+		[in] BSTR thousand_sep,
+		[in] ENEGCURRENCYMODE negative_currency_format,
+		[in] EPOSCURRENCYMODE positive_currency_format,
+		[in] BSTR currency_symbol,
+		[out, retval] BSTR *result_string );
+
+	[id( 46 ), helpstring( "Expands environment string." )]
+	HRESULT ExpandEnvironmentString( [in] BSTR environment_string, [out, retval] BSTR *result_string );
+
+	[id( 47 ), helpstring( "Returns true if one or more characters in <source_string> is a letter. Local system settings specifies character set." )]
+	HRESULT HasAlpha( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 48 ), helpstring( "Returns true if one or more characters in <source_string> is a letter or a decimal number." )]
+	HRESULT HasAlphaNumeric( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 49 ), helpstring( "Returnes true if one or more characters in <source_string> is in uppercase." )]
+	HRESULT HasUpperCase( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 50 ), helpstring( "Returnes true if one or more characters in <source_string> is in lowercase." )]
+	HRESULT HasLowerCase( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 51 ), helpstring( "Returnes true if one or more characters in <source_string> is a decimal number." )]
+	HRESULT HasDigit( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 52 ), helpstring( "Returnes true if one or more characters in <source_string> is a decimal number of has the letters [a,f],[A,F]." )]
+	HRESULT HasHexDigit( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 53 ), helpstring( "Returnes true if one or more characters in <source_string> is space." )]
+	HRESULT HasSpace( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 54 ), helpstring( "Returnes true if one or more characters in <source_string> does not belong to the local systems char-set." )]
+	HRESULT HasPunct( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 55 ), helpstring( "Returnes true if one or more characters in <source_string> is a printable character." )]
+	HRESULT HasPrint( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 56 ), helpstring( "Returnes true if one or more characters in <source_string> is a printable character other than space." )]
+	HRESULT HasGraph( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 57 ), helpstring( "Returnes true if one or more characters in <source_string> represents an ascii character." )]
+	HRESULT HasASCII( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 58 ), helpstring( "Returnes true if one or more characters in <source_string> is a control character (0x00 � 0x1F or 0x7F)." )]
+	HRESULT HasControl( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 59 ), helpstring( "Returns true if all characters in <source_string> is a letter. Local system settings specifies character set." )]
+	HRESULT IsAlpha( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 60 ), helpstring( "Returns true if all characters in <source_string> is a letter or a decimal number." )]
+	HRESULT IsAlphaNumeric( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 61 ), helpstring( "Returnes true if all characters in <source_string> is in uppercase." )]
+	HRESULT IsUpperCase( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 62 ), helpstring( "Returnes true if all characters in <source_string> is in lowercase." )]
+	HRESULT IsLowerCase( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 63 ), helpstring( "Returnes true if all characters in <source_string> is a decimal number." )]
+	HRESULT IsDigit( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 64 ), helpstring( "Returnes true if all characters in <source_string> is a decimal number of has the letters [a,f],[A,F]." )]
+	HRESULT IsHexDigit( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 65 ), helpstring( "Returnes true if all characters in <source_string> is space." )]
+	HRESULT IsSpace( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 66 ), helpstring( "Returnes true if all characters in <source_string> does not belong to the local systems char-set." )]
+	HRESULT IsPunct( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 67 ), helpstring( "Returnes true if all characters in <source_string> is a printable character." )]
+	HRESULT IsPrint( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 68 ), helpstring( "Returnes true if all characters in <source_string> is a printable character other than space." )]
+	HRESULT IsGraph( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 69 ), helpstring( "Returnes true if all characters in <source_string> represents an ascii character." )]
+	HRESULT IsASCII( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 70 ), helpstring( "Returnes true if one or more characters in <source_string> is a control character (0x00 � 0x1F or 0x7F)." )]
+	HRESULT IsControl( [in] BSTR source_string, [out, retval] VARIANT_BOOL *result_value );
+
+	[id( 71 ), helpstring( "Returnes a collection of items that are split from the <source_string> by the <delimiter_string>." )]
+	HRESULT SplitToCollection( [in] BSTR source_string, [in] BSTR delimiter_string, [out, retval] INCFCollectionList **ppINCFCollectionList );
+
+	[id( 72 ), helpstring( "Splits a text with lineshifts.  Supports both" )]
+	HRESULT LineSplit( [in] BSTR source_string, [in, out] BSTR *remainder_string, [out, retval] BSTR *result_string );
+
+	[id( 73 ), helpstring( "Splits a text with lineshifts to a collection with one line per item." )]
+	HRESULT LineSplitToCollection( [in] BSTR source_string, [out, retval] INCFCollectionList **ppINCFCollectionList );
+
+	[id( 74 ), helpstring( "Returnes the string found between the first pair of <string1> and <string2> in <source_string>. <string1> must be before <string2> in <source_string>." )]
+	HRESULT StringBetweenStringsInOrder( [in] BSTR source_string, [in] BSTR string1, [in] BSTR string2, [out, retval] BSTR *result_string );
+
+	[id( 75 ), helpstring( "Converts a long (milliseconds) to time format string. hh mm ss h m s rr r" )]
+	HRESULT TimeToString( [in] BSTR format, [in] ULONG timeMilliseconds, [out, retval] BSTR *result_string );
+};
+
+
+typedef
+[
+	uuid( 19099BA3-C673-4fdf-9781-ADCA3C5135FD ),
+	helpstring( "Registry Root Key Enums." ),
+	v1_enum
+]
+enum EREGCLASS
+{
+	EHKEY_CLASSES_ROOT = 0,
+	EHKEY_CURRENT_USER = 1,
+	EHKEY_LOCAL_MACHINE = 2,
+	EHKEY_USERS = 3,
+	EHKEY_PERFORMANCE_DATA = 4,
+	EHKEY_CURRENT_CONFIG = 5,
+	EHKEY_DYN_DATA = 6
+} EREGCLASS;
+
+typedef
+[
+	uuid( A0C54F1E-CD9D-4d93-9894-D28AB3B2CE7E ),
+	helpstring( "Registry Value Types." ),
+	v1_enum
+]
+enum EREGVALUETYPE
+{
+	ERDT_REG_NONE = 0,	// No value type
+	ERDT_REG_SZ = 1,	// Unicode nul terminated string
+	ERDT_REG_EXPAND_SZ = 2,	// Unicode nul terminated string
+							// (with environment variable references)
+							ERDT_REG_BINARY = 3,	// Free form binary
+							ERDT_REG_DWORD = 4,	// 32-bit number
+							ERDT_REG_DWORD_LITTLE_ENDIAN = 4,	// 32-bit number (same as REG_DWORD)
+							ERDT_REG_DWORD_BIG_ENDIAN = 5,	// 32-bit number
+							ERDT_REG_MULTI_SZ = 7,	// Multiple Unicode strings
+							ERDT_REG_RESOURCE_LIST = 8,	// Resource list in the resource map
+							ERDT_REG_FULL_RESOURCE_DESCRIPTOR = 9,	// Resource list in the hardware description
+							ERDT_REG_RESOURCE_REQUIREMENTS_LIST = 10,
+							ERDT_REG_QWORD = 11,	// 64-bit number
+							ERDT_REG_QWORD_LITTLE_ENDIAN = 11	// 64-bit number (same as REG_QWORD)
+} EREGVALUETYPE;
+
+
+[
+	object,
+	uuid( CEBF8F72-25BB-41BC-B918-F6065A352050 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFRegistry : IDispatch
+{
+	[id( 1 ), helpstring( "Deletes a specified key from registry." )]
+	HRESULT DeleteKey( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key );
+
+	[id( 2 ), helpstring( "Creates a specified key in registry." )]
+	HRESULT CreateKey( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key,
+		[in] BSTR default_data );
+
+
+	[id( 3 ), helpstring( "Adds a value with data to a specified key in registry." )]
+	HRESULT AddValue( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key,
+		[in] BSTR value,
+		[in] BSTR data );
+
+	[id( 4 ), helpstring( "Removes a specified value from a specified key in registry." )]
+	HRESULT DeleteValue( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key,
+		[in] BSTR value );
+
+	[id( 5 ), helpstring( "Reads a specified value from a specified key in registry. Only supports a value data type of REG_SZ." )]
+	HRESULT ReadValue( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key,
+		[in] BSTR value,
+		[out, retval] BSTR *data );
+
+	[id( 6 ), helpstring( "Enumerates all keys under a specified registry path." )]
+	HRESULT EnumerateKeys( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[out, retval] INCFCollectionList **ppINCFCollectionList );
+
+	[id( 7 ), helpstring( "Enumerates all values under a specified key in registry." )]
+	HRESULT EnumerateValues( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key,
+		[out, retval] INCFCollectionList **ppINCFCollectionList );
+
+	[id( 8 ), helpstring( "Enumerates all values with string data under a specified key in registry." )]
+	HRESULT EnumerateStringValues( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key,
+		[out, retval] INCFCollectionMap **ppINCFCollectionMap );
+
+	[id( 9 ), helpstring( "Stores a collection in registry.." )]
+	HRESULT StoreCollection( [in] EREGCLASS eregclass,
+		[in] BSTR path,
+		[in] BSTR key,
+		[in] INCFCollectionMap *pINCFCollectionMap );
+};
+
+[
+	object,
+	uuid( CC2FE534-BB05-42B0-B581-F3411C35D95E ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFIniFile : IDispatch
+{
+	[id( 1 ), helpstring( "Creates a key in a .ini file. If the section does not exist it is created." )]
+	HRESULT CreateKey( [in] BSTR filename,
+		[in] BSTR sectionname,
+		[in] BSTR keyname,
+		[in] BSTR value,
+		[in] VARIANT_BOOL overwriteifexist );
+
+	[id( 2 ), helpstring( "Deletes a key from a .ini file." )]
+	HRESULT DeleteKey( [in] BSTR filename,
+		[in] BSTR sectionname,
+		[in] BSTR keyname );
+
+	[id( 3 ), helpstring( "Reads the value of a key in a .ini file." )]
+	HRESULT ReadValue( [in]  BSTR filename,
+		[in]  BSTR sectionname,
+		[in]  BSTR keyname,
+		[out, retval] BSTR *value );
+
+	[id( 4 ), helpstring( "Sets the value of a key in a .ini file." )]
+	HRESULT SetValue( [in] BSTR filename,
+		[in] BSTR sectionname,
+		[in] BSTR keyname,
+		[in] BSTR value );
+
+	[id( 5 ), helpstring( "Create a section at the end of the specified .ini file." )]
+	HRESULT CreateSection( [in] BSTR filename,
+		[in] BSTR sectionname );
+
+	[id( 6 ), helpstring( "Removes a section from the specified .ini file." )]
+	HRESULT DeleteSection( [in] BSTR filename,
+		[in] BSTR sectionname );
+
+	[id( 7 ), helpstring( "Stores the key,value pairs of a Map collection under a section. If section does not exist then its created." )]
+	HRESULT StoreCollection( [in] BSTR filename,
+		[in] BSTR sectionname,
+		[in] INCFCollectionMap *pINCFCollectionMap,
+		[in] VARIANT_BOOL overwriteifexist );
+
+	[id( 8 ), helpstring( "Enumerates all key-values within a section in a .ini file." )]
+	HRESULT EnumerateKeys( [in] BSTR filename,
+		[in] BSTR sectionname,
+		[out, retval] INCFCollectionMap **ppINCFCollectionMap );
+
+	[id( 9 ), helpstring( "Enumerates all sections within a .ini file." )]
+	HRESULT EnumerateSections( [in] BSTR filename,
+		[out, retval] INCFCollectionList **ppINCFCollectionList );
+};
+typedef
+[
+	uuid( 8965DA36-C0D8-402b-A940-E0ED35B3CC0E ),
+	helpstring( "GUID types." ),
+	v1_enum
+]
+enum EGUIDTYPE
+{
+	EGUID_REGISTRYFORMAT = 0,
+	EGUID_REGISTRYFORMAT_STRIPPED = 1,
+	EGUID_CONSTFORMAT = 2,
+	EGUID_COMPACTFORMAT = 3,
+	EGUID_PREFIXED_COMPACTFORMAT = 4,
+
+} EGUIDTYPE;
+
+[
+	object,
+	uuid( 9FDA4821-618F-4FEB-9B62-02C36C6493DD ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFGuid : IDispatch
+{
+	[id( 1 ), helpstring( "Creates a guid of type eguidtype." )]
+	HRESULT CreateGuidType( [in] EGUIDTYPE, [out, retval] BSTR *pbstrGUID );
+
+	[id( 2 ), helpstring( "Creates a guid of registryformat type." )]
+	HRESULT CreateGuid( [out, retval] BSTR *pbstrGUID );
+};
+
+typedef
+[
+	uuid( 10810239-C795-4221-B497-3B1EFB840C08 ),
+	helpstring( "EventLog Types." ),
+	v1_enum
+]
+enum EEVENTLOGTYPE
+{
+	EET_SUCCESS = 0,
+	EET_ERROR_TYPE = 1,
+	EET_WARNING_TYPE = 2,
+	EET_INFORMATION_TYPE = 3,
+	EET_AUDIT_SUCCESS = 4,
+	EET_AUDIT_FAILURE = 5
+} EEVENTLOGTYPE;
+
+[
+	object,
+	uuid( 56F2F97E-4B27-4F64-A0D5-39158E535FFB ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFEventLog : IDispatch
+{
+	[id( 1 ), helpstring( "Reports an event to the eventlog." )]
+	HRESULT ReportEvent( [in] BSTR sourcename, [in] EEVENTLOGTYPE eeventlogtype, [in] short category, [in] long eventid, [in] short numberofstrings, [in] BSTR description );
+
+	[id( 2 ), helpstring( "Reports an event to the eventlog on a remote machine in the network. Could fail due to a firewall restriction." )]
+	HRESULT ReportEventEx( [in] BSTR uncservername, [in] BSTR sourcename, [in] EEVENTLOGTYPE eeventlogtype, [in] short category, [in] long eventid, [in] short numberofstrings, [in] BSTR description );
+};
+[
+	uuid( 0DC7FA68-F230-49FC-97DD-D6B09D236CC5 ),
+	version( 1.0 ),
+]
+library ItSoftwareNCFSystemLib
+{
+	importlib( "stdole2.tlb" );
+	[
+		uuid( 0583A421-2CB6-4A9A-B8B1-086C42F6FDC6 )
+	]
+	coclass NCFString
+	{
+		[default] interface INCFString;
+	};
+	[
+		uuid( A23F8AAD-C135-4151-90D1-71C4E0232E67 )
+	]
+	coclass NCFRegistry
+	{
+		[default] interface INCFRegistry;
+	};
+	[
+		uuid( 8C338C24-5C01-46EE-9B2D-DE58D4343E7E )
+	]
+	coclass NCFIniFile
+	{
+		[default] interface INCFIniFile;
+	};
+	[
+		uuid( E0C584DF-B183-452F-AA84-BE00D2A51328 )
+	]
+	coclass NCFGuid
+	{
+		[default] interface INCFGuid;
+	};
+	[
+		uuid( 7519E65E-1D53-4852-81EB-40800C11FBAB )
+	]
+	coclass NCFEventLog
+	{
+		[default] interface INCFEventLog;
+	};
+};
+

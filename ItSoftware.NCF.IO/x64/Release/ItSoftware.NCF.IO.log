@@ -1,0 +1,60 @@
+﻿  64 bit Processing .\ItSoftwareNCFIO.idl
+  ItSoftwareNCFIO.idl
+.\ItSoftwareNCFIO.idl(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+.\ItSoftwareNCFIO.idl(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.idl
+  oaidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\objidl.idl
+  objidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\unknwn.idl
+  unknwn.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypes.idl
+  wtypes.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypesbase.idl
+  wtypesbase.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\basetsd.h
+  basetsd.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\guiddef.h
+  guiddef.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.idl
+  ocidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oleidl.idl
+  oleidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\servprov.idl
+  servprov.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\urlmon.idl
+  urlmon.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\msxml.idl
+  msxml.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.acf
+  oaidl.acf
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.acf
+  ocidl.acf
+  stdafx.cpp
+  CNCFDirectory.cpp
+  CNCFFile.cpp
+  CNCFFileStream.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.io\cncffilestream.cpp(278): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
+  CNCFMemoryStream.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.io\cncfmemorystream.cpp(284): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  CNCFNetwork.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.io\cncfnetwork.cpp(106): warning C4018: '<=': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.io\cncfnetwork.cpp(427): warning C4018: '<': signed/unsigned mismatch
+  CNCFNetworkResource.cpp
+  CNCFNetworkShare.cpp
+  CNCFPath.cpp
+  CNCFStringStream.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.io\cncfstringstream.cpp(142): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
+  CNCFUrl.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.io\cncfurl.cpp(343): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.io\cncfurl.cpp(354): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+  ItSoftware.NCF.IO.cpp
+  Generating Code...
+  dllmain.cpp
+  ItSoftwareNCFIO_i.c
+  xdlldata.c
+  Generating Code...
+     Creating library D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.IO.lib and object D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.IO.exp
+  ItSoftware.NCF.IO.vcxproj -> D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.IO.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(1840,5): warning MSB3075: The command "regsvr32 /s "D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.IO.dll"" exited with code 5. Please verify that you have sufficient rights to run this command.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(1852,5): error MSB8011: Failed to register output. Please try enabling Per-user Redirection or register the component from a command prompt with elevated permissions.

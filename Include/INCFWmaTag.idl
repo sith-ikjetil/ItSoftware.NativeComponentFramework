@@ -1,0 +1,22 @@
+// ItSoftwareNCFWMHeaderInfo.idl : IDL source for ItSoftware.NCF.WMHeaderInfo
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFWMHeaderInfo.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "INCFAudioTag.idl";
+
+[
+	object,
+	uuid(78C894FB-9551-45BB-817B-313CC452D698),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INCFWmaTag : INCFAudioTag
+{
+
+};
+

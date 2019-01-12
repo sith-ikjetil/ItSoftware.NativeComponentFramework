@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.AudioPlayer.1 = s 'NCFAudioPlayer Class'
+	{
+		CLSID = s '{E5743312-7214-4C6C-A33C-732E82BC5AB7}'
+	}
+	ItSoftware.NCF.AudioPlayer = s 'NCFAudioPlayer Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.AudioPlayer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E5743312-7214-4C6C-A33C-732E82BC5AB7} = s 'NCFAudioPlayer Class'
+		{
+			ProgID = s 'ItSoftware.NCF.AudioPlayer.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.AudioPlayer'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

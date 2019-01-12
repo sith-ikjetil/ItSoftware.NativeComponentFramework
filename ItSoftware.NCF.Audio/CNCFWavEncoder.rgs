@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.WavEncoder.1 = s 'NCFWavEncoder Class'
+	{
+		CLSID = s '{969620D5-C89F-49F7-BFB3-0D9E3A0C6186}'
+	}
+	ItSoftware.NCF.WavEncoder = s 'NCFWavEncoder Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.WavEncoder.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {969620D5-C89F-49F7-BFB3-0D9E3A0C6186} = s 'NCFWavEncoder Class'
+		{
+			ProgID = s 'ItSoftware.NCF.WavEncoder.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.WavEncoder'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

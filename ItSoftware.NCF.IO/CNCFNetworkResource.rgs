@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.NetworkResource.1 = s 'NCFNetworkResource Class'
+	{
+		CLSID = s '{19007660-76CE-457B-B5B3-517BCFB44840}'
+	}
+	ItSoftware.NCF.NetworkResource = s 'NCFNetworkResource Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.NetworkResource.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {19007660-76CE-457B-B5B3-517BCFB44840} = s 'NCFNetworkResource Class'
+		{
+			ProgID = s 'ItSoftware.NCF.NetworkResource.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.NetworkResource'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{CE56C292-257B-4680-9026-0F4E43D79CBD}'
+			Version = s '1.0'
+		}
+	}
+}

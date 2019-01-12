@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.WmaEncoder.1 = s 'NCFWmaEncoder Class'
+	{
+		CLSID = s '{729E5AEA-46E7-4E19-AF0A-7CC7EEC1A969}'
+	}
+	ItSoftware.NCF.WmaEncoder = s 'NCFWmaEncoder Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.WmaEncoder.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {729E5AEA-46E7-4E19-AF0A-7CC7EEC1A969} = s 'NCFWmaEncoder Class'
+		{
+			ProgID = s 'ItSoftware.NCF.WmaEncoder.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.WmaEncoder'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,192 @@
+﻿  64 bit Processing .\ItSoftwareNCFCollection.idl
+  ItSoftwareNCFCollection.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.idl
+  oaidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\objidl.idl
+  objidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\unknwn.idl
+  unknwn.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypes.idl
+  wtypes.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypesbase.idl
+  wtypesbase.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\basetsd.h
+  basetsd.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\guiddef.h
+  guiddef.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.idl
+  ocidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oleidl.idl
+  oleidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\servprov.idl
+  servprov.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\urlmon.idl
+  urlmon.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\msxml.idl
+  msxml.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.acf
+  oaidl.acf
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.acf
+  ocidl.acf
+  stdafx.cpp
+  CNCFCollectionList.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(24): error C2065: 'CLSID_NCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(24): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(26): error C2065: 'INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(26): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(26): error C2923: 'ATL::IDispatchImpl': 'INCFCollectionList' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(26): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(27): error C2923: 'ATL::IDispatchImpl': 'INCFCollectionList' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(27): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(27): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(35): error C2065: 'IDR_CNCFLIST': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(40): error C2065: 'INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(40): error C2061: syntax error: identifier 'INCFCollectionList'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(40): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(40): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(41): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(41): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(41): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(42): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(42): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(42): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(43): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(43): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(43): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(43): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(49): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(49): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2065: 'NCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.h(86): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(13): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(55): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(64): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(75): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(88): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(100): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(118): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(137): error C2065: 'IID_INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionlist.cpp(151): error C2065: 'IID_INCFCollectionList': undeclared identifier
+  CNCFCollectionMap.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(44): error C2065: 'CLSID_NCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(44): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(46): error C2065: 'INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(46): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(46): error C2923: 'ATL::IDispatchImpl': 'INCFCollectionMap' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(46): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(47): error C2923: 'ATL::IDispatchImpl': 'INCFCollectionMap' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(47): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(47): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(55): error C2065: 'IDR_CNCFMAP': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(60): error C2065: 'INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(60): error C2061: syntax error: identifier 'INCFCollectionMap'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(60): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(60): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(61): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(61): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(61): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(62): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(62): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(62): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(63): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(63): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(63): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(63): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(69): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(69): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2065: 'NCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.h(106): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(13): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(86): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(114): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(121): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(145): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(155): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(162): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(172): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(186): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfcollectionmap.cpp(199): error C2065: 'IID_INCFCollectionMap': undeclared identifier
+  CNCFPriorityQueue.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(40): error C2065: 'CLSID_NCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(40): error C2975: 'pclsid': invalid template argument for 'ATL::CComCoClass', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(3995): note: see declaration of 'pclsid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(42): error C2065: 'INCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(42): error C2065: 'IID_INCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(42): error C2923: 'ATL::IDispatchImpl': 'INCFCollectionPriorityQueue' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(42): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(43): error C2923: 'ATL::IDispatchImpl': 'INCFCollectionPriorityQueue' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(43): error C2975: 'piid': invalid template argument for 'ATL::IDispatchImpl', expected compile-time constant expression
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5122): note: see declaration of 'piid'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(43): error C2955: 'ATL::IDispatchImpl': use of class template requires template argument list
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcom.h(5124): note: see declaration of 'ATL::IDispatchImpl'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(51): error C2065: 'IDR_CNCFPRIORITYQUEUE': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(56): error C2065: 'INCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(56): error C2061: syntax error: identifier 'INCFCollectionPriorityQueue'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(56): error C2143: syntax error: missing ';' before '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(56): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(57): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(57): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(57): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(58): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(58): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(58): error C2059: syntax error: ','
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(59): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(59): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(59): error C2059: syntax error: '}'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(59): error C2059: syntax error: 'return'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(65): error C2143: syntax error: missing ';' before '{'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(65): error C2447: '{': missing function header (old-style formal list?)
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2065: 'NCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2078: too many initializers
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(BOOL) throw()' to 'const CLSID *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2440: 'initializing': cannot convert from 'HRESULT (__cdecl *)(void *,const IID &,LPVOID *)' to 'HRESULT (__cdecl *)(BOOL)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2440: 'initializing': cannot convert from 'ATL::_ATL_OBJMAP_CACHE *' to 'ATL::_ATL_CREATORFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2440: 'initializing': cannot convert from 'LPCTSTR (__cdecl *)(void)' to 'ATL::_ATL_OBJMAP_CACHE *'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): note: There is no context in which this conversion is possible
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2440: 'initializing': cannot convert from 'const ATL::_ATL_CATMAP_ENTRY *(__cdecl *)(void)' to 'ATL::_ATL_DESCRIPTIONFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): error C2440: 'initializing': cannot convert from 'void (__cdecl *)(bool)' to 'ATL::_ATL_CATMAPFUNC (__cdecl *)'
+  d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.h(98): note: None of the functions with this name in scope match the target type
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.cpp(13): error C2065: 'IID_INCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.cpp(41): error C2065: 'IID_INCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.cpp(69): error C2065: 'IID_INCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.cpp(129): error C2065: 'IID_INCFCollectionPriorityQueue': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.collection\cncfpriorityqueue.cpp(138): error C2065: 'IID_INCFCollectionPriorityQueue': undeclared identifier
+  ItSoftware.NCF.Collection.cpp
+  Generating Code...

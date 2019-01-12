@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.Mp3Tag.1 = s 'NCFMp3Tag Class'
+	{
+		CLSID = s '{45AEBF1B-D4F0-47A2-A7DD-87376B187E0C}'
+	}
+	ItSoftware.NCF.Mp3Tag = s 'NCFMp3Tag Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.Mp3Tag.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {45AEBF1B-D4F0-47A2-A7DD-87376B187E0C} = s 'NCFMp3Tag Class'
+		{
+			ProgID = s 'ItSoftware.NCF.Mp3Tag.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.Mp3Tag'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

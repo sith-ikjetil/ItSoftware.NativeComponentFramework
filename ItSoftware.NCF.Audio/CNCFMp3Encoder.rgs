@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.Mp3Encoder.1 = s 'NCFMp3Encoder Class'
+	{
+		CLSID = s '{9DAC6DFA-6D9C-4B1D-83C2-8DE93E771DD0}'
+	}
+	ItSoftware.NCF.Mp3Encoder = s 'NCFMp3Encoder Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.Mp3Encoder.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9DAC6DFA-6D9C-4B1D-83C2-8DE93E771DD0} = s 'NCFMp3Encoder Class'
+		{
+			ProgID = s 'ItSoftware.NCF.Mp3Encoder.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.Mp3Encoder'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

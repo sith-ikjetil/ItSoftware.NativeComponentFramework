@@ -1,0 +1,132 @@
+// ItSoftwareNCFMp3Tag.idl : IDL source for ItSoftware.NCF.Mp3Tag
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFMp3Tag.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(5AB40352-3E42-4B0E-B7DF-9A315920AADE),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INCFAudioTag : IDispatch
+{
+	[id(1), helpstring("String containing the content title.")]
+	HRESULT SetTitle([in] BSTR title);
+
+	[id(2), helpstring("String containing the content title.")]
+	HRESULT GetTitle([out, retval] BSTR *title);
+
+	[id(3), helpstring("String containing the name of the content author.")]
+	HRESULT SetAuthor([in] BSTR author);
+
+	[id(4), helpstring("String containing the content title.")]
+	HRESULT	GetAuthor([out, retval] BSTR *author);
+
+	[id(5), helpstring("String containing a description of the content.")]
+	HRESULT SetDescription([in] BSTR description);
+
+	[id(6), helpstring("String containing a description of the content.")]
+	HRESULT GetDescription([out, retval] BSTR *description);
+
+	[id(7), helpstring("String containing a content rating.")]
+	HRESULT SetRating([in] BSTR rating);
+
+	[id(8), helpstring("String containing a content rating.")]
+	HRESULT GetRating([out, retval] BSTR *rating);
+
+	[id(9), helpstring("String containing a content copyright message.")]
+	HRESULT SetCopyright([in] BSTR copyright);
+
+	[id(10), helpstring("String containing a content copyright message.")]
+	HRESULT GetCopyright([out, retval] BSTR *copyright);
+
+	[id(11), helpstring("String containing the album title.")]
+	HRESULT SetAlbumTitle([in] BSTR album_title);
+
+	[id(12), helpstring("String containing the album title.")]
+	HRESULT GetAlbumTitle([out, retval] BSTR *album_title);
+
+	[id(13), helpstring("String word containing the track number.")]
+	HRESULT SetTrack([in] BSTR track_number);
+
+	[id(14), helpstring("String containing the track number.")]
+	HRESULT GetTrack([out, retval] BSTR *track_number);
+
+	[id(15), helpstring("String with the genre of the music.")]
+	HRESULT SetGenre([in] BSTR genre);
+
+	[id(16), helpstring("String with the genre of the music.")]
+	HRESULT GetGenre([out, retval] BSTR *genre);
+
+	[id(17), helpstring("String with the year of publication of the music.")]
+	HRESULT SetYear([in] BSTR year);
+
+	[id(18), helpstring("String with the year of publication of the music.")]
+	HRESULT GetYear([out, retval] BSTR *year);
+
+	[id(19), helpstring("Copyright URL.")]
+	HRESULT SetCopyrightURL([in] BSTR copyright_url);
+
+	[id(20), helpstring("Copyright URL.")]
+	HRESULT GetCopyrightURL([out, retval] BSTR *copyright_url);
+
+	[id(21), helpstring("Album cover URL.")]
+	HRESULT SetAlbumCoverURL([in] BSTR album_cover_url);
+
+	[id(22), helpstring("Album cover URL.")]
+	HRESULT GetAlbumCoverURL([out, retval] BSTR *album_cover_url);
+
+	[id(23), helpstring("Set promotion URL.")]
+	HRESULT SetPromotionURL([in] BSTR promotion_url);
+
+	[id(24), helpstring("Get promotion URL.")]
+	HRESULT GetPromotionURL([out, retval] BSTR *promotion_url);
+
+	[id(25), helpstring("Set lyrics.")]
+	HRESULT SetLyrics([in] BSTR lyrics);
+
+	[id(26), helpstring("Get lyrics.")]
+	HRESULT GetLyrics([out, retval] BSTR *lyrics);
+
+	[id(27), helpstring("Loads attributes from <filename>.")]
+	HRESULT LoadFromFile([in] BSTR filename);
+
+	[id(28), helpstring("Sets the attributes to <filename>.")]
+	HRESULT SaveToFile([in] BSTR filename);
+	
+	[id(29), helpstring("Loads attributes from IWMHeaderInfo interface.")]
+	HRESULT LoadFromInterface([in] IUnknown *pIUnknown);
+
+	[id(30), helpstring("Saves attributes to a IWMHeaderInfo interface..")]
+	HRESULT SaveToInterface([in] IUnknown *pIUnknown);
+
+	[id(31), helpstring("Clears all attributes.")]
+	HRESULT Clear();
+
+	[id(32), propget, helpstring("")]
+	HRESULT Duration([out, retval] long *milliseconds);
+
+	[id(33), propget, helpstring("")]
+	HRESULT HasAudio([out, retval] VARIANT_BOOL *has_audio);
+
+	[id(34), propget, helpstring("")]
+	HRESULT HasVideo([out, retval] VARIANT_BOOL *has_video);
+
+	[id(35), helpstring("")]
+	HRESULT GetComposer([out, retval] BSTR *composer);
+
+	[id(36), helpstring("")]
+	HRESULT SetComposer([in] BSTR composer);
+
+	[id(37), helpstring("")]
+	HRESULT GetAlbumAuthor([out, retval] BSTR *author);
+
+	[id(38), helpstring("")]
+	HRESULT SetAlbumAuthor([in] BSTR author);
+};

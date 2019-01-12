@@ -1,0 +1,51 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(302930A6-6E9B-4040-B110-80D82EB2029A),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INCFCollectionMap : IDispatch
+{
+	[id(1), propget, helpstring("Returnes true if map is empty.")]
+	HRESULT Empty([out, retval] VARIANT_BOOL *pvtbEmpty);
+
+	[id(2), propget, helpstring("Returnes number of elements in map.")]
+	HRESULT Size([out, retval] long *plSize);
+
+	[id(3), helpstring("Erases all items in map.")]
+	HRESULT Clear();
+
+	[id(4), helpstring("Adds an item to the queue.")]
+	HRESULT AddItem([in] BSTR bstrKey, [in] VARIANT vtValue);
+
+	[id(5), helpstring("Adds an item to the queue.")]
+	HRESULT RemoveItemByKey([in] BSTR bstrKey);
+
+	[id(6), helpstring("Adds an item to the queue.")]
+	HRESULT RemoveItemByIndex([in] long lIndex);
+
+	[id(7), helpstring("")]
+	HRESULT UpdateValueByKey([in] BSTR bstrKey, [in] VARIANT vtValue);
+
+	[id(8), helpstring("")]
+	HRESULT UpdateValueByIndex([in] long lIndex, [in] VARIANT vtValue);
+
+	[id(9), helpstring("Adds an item to the queue.")]
+	HRESULT GetValueByKey([in] BSTR bstrKey, [out, retval] VARIANT *pvtValue);
+
+	[id(10), helpstring("Gets an item by index [0,(max-1]")]
+	HRESULT GetValueByIndex([in] long lIndex, [out, retval] VARIANT *pvtValue);
+
+	[id(11), helpstring("")]
+	HRESULT GetKeyByIndex([in] long lIndex, [out, retval] BSTR *pbstrKey);
+
+	[id(12), helpstring("Sorts map by key values.")]
+	HRESULT Sort();
+
+	[id(13), helpstring("Sorts map by key values.")]
+	HRESULT GetItemByIndex([in] long lIndex, [in, out] BSTR *pbstrKey, [out, retval] VARIANT *pvtValue);
+};

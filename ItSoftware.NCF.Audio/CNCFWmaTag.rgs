@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.WmaTag.1 = s 'WmaTag Class'
+	{
+		CLSID = s '{611250A1-4A6C-4FAC-B72C-B849A5F33110}'
+	}
+	ItSoftware.NCF.WmaTag = s 'WMHeaderInfo Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.WmaTag.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {611250A1-4A6C-4FAC-B72C-B849A5F33110} = s 'WmaTag Class'
+		{
+			ProgID = s 'ItSoftware.NCF.WmaTag.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.WmaTag'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

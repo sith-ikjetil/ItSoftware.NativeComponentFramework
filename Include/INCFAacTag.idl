@@ -1,0 +1,21 @@
+// ItSoftwareNCFMp3Tag.idl : IDL source for ItSoftware.NCF.Mp3Tag
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFMp3Tag.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "INCFAudioTag.idl";
+
+[
+	object,
+	uuid(C9C7563D-D672-47BA-B778-7427A0294380),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INCFAacTag : INCFAudioTag
+{
+	
+};

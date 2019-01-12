@@ -1,0 +1,69 @@
+﻿  64 bit Processing .\ItSoftwareNCFAudio.idl
+  ItSoftwareNCFAudio.idl
+.\ItSoftwareNCFAudio.idl(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+.\ItSoftwareNCFAudio.idl(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.idl
+  oaidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\objidl.idl
+  objidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\unknwn.idl
+  unknwn.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypes.idl
+  wtypes.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypesbase.idl
+  wtypesbase.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\basetsd.h
+  basetsd.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\guiddef.h
+  guiddef.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.idl
+  ocidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oleidl.idl
+  oleidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\servprov.idl
+  servprov.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\urlmon.idl
+  urlmon.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\msxml.idl
+  msxml.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.acf
+  oaidl.acf
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.acf
+  ocidl.acf
+  stdafx.cpp
+  CNCFAacEncoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  CNCFAacTag.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(405): warning C4244: '=': conversion from 'QWORD' to 'ULONG', possible loss of data
+  CNCFAudioCD.cpp
+  CNCFAudioPlayer.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudioplayer.cpp(965): warning C4018: '<': signed/unsigned mismatch
+  CNCFEncoderParams.cpp
+  CNCFMp3Encoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  CNCFMp3Genre.cpp
+  CNCFMp3Tag.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(405): warning C4244: '=': conversion from 'QWORD' to 'ULONG', possible loss of data
+  CNCFWavEncoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  CNCFWmaEncoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  CNCFWmaTag.cpp
+  ItSoftware.NCF.Audio.cpp
+  Generating Code...
+  dllmain.cpp
+  ItSoftwareNCFAudio_i.c
+  xdlldata.c
+  Generating Code...
+     Creating library D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.Audio.lib and object D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.Audio.exp
+  ItSoftware.NCF.Audio.vcxproj -> D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.Audio.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(1840,5): warning MSB3075: The command "regsvr32 /s "D:\Projects\GitHub\ItSoftware.NativeComponentFramework.2017\x64\Release\ItSoftware.NCF.Audio.dll"" exited with code 5. Please verify that you have sufficient rights to run this command.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(1852,5): error MSB8011: Failed to register output. Please try enabling Per-user Redirection or register the component from a command prompt with elevated permissions.

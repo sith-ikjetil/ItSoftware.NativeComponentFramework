@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.EncoderParams.1 = s 'NCFEncoderParams Class'
+	{
+		CLSID = s '{4783B9EE-AB96-4105-9C5E-496F74E26AAE}'
+	}
+	ItSoftware.NCF.EncoderParams = s 'NCFEncoderParams Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.EncoderParams.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {4783B9EE-AB96-4105-9C5E-496F74E26AAE} = s 'NCFEncoderParams Class'
+		{
+			ProgID = s 'ItSoftware.NCF.EncoderParams.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.EncoderParams'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.StringStream.1 = s 'NCFStringStream Class'
+	{
+		CLSID = s '{616646F6-FC54-4A7B-9639-227F1D9740BE}'
+	}
+	ItSoftware.NCF.StringStream = s 'NCFStringStream Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.StringStream.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {616646F6-FC54-4A7B-9639-227F1D9740BE} = s 'NCFStringStream Class'
+		{
+			ProgID = s 'ItSoftware.NCF.StringStream.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.StringStream'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{CE56C292-257B-4680-9026-0F4E43D79CBD}'
+			Version = s '1.0'
+		}
+	}
+}

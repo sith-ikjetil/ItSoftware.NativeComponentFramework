@@ -1,0 +1,171 @@
+// ItSoftwareNCFCollection.idl : IDL source for ItSoftware.NCF.Collection
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFCollection.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid( 493378E5-71C6-4ACA-ACB4-B28D2695BA33 ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFCollectionList : IDispatch
+{
+	[id( 1 ), helpstring( "Add an item to the back of the list." )]
+	HRESULT AddItemToBack( [in] VARIANT vtItem );
+
+	[id( 2 ), helpstring( "Add an item in the front of the list." )]
+	HRESULT AddItemToFront( [in] VARIANT vtItem );
+
+	[id( 3 ), helpstring( "Remove the last item of the list." )]
+	HRESULT RemoveBackItem( );
+
+	[id( 4 ), helpstring( "Remove the first item of the list." )]
+	HRESULT RemoveFrontItem( );
+
+	[id( 5 ), propget, helpstring( "Retrieve the number of elements in the list." )]
+	HRESULT Size( [out, retval] long *plSize );
+
+	[id( 6 ), helpstring( "Retrieves an item by it's zero based index." )]
+	HRESULT GetItemByIndex( [in] long lIndex, [out, retval] VARIANT *pvtItem );
+
+	[id( 7 ), helpstring( "Set an item by its value." )]
+	HRESULT SetItemByIndex( [in] long lIndex, [in] VARIANT vtItem );
+
+	[id( 8 ), helpstring( "Removes an item by it's zero based index." )]
+	HRESULT RemoveItemByIndex( [in] long lIndex );
+
+	[id( 9 ), helpstring( "Removes items in the list by their values." )]
+	HRESULT RemoveItemsByValue( [in] VARIANT vtItem );
+
+	[id( 10 ), helpstring( "Erase all items." )]
+	HRESULT Clear( );
+
+	[id( 11 ), propget, helpstring( "Is list empty?" )]
+	HRESULT Empty( [out, retval] VARIANT_BOOL *pvtbEmpty );
+
+	[id( 12 ), helpstring( "Inserts an item before another at specified index." )]
+	HRESULT InsertItemBefore( [in] long lIndex, [in] VARIANT vtItem );
+
+	[id( 13 ), helpstring( "Removes all elements between indexes" )]
+	HRESULT RemoveItems( [in] long lIndex1, [in] long lIndex2 );
+};
+[
+	object,
+	uuid( 302930A6-6E9B-4040-B110-80D82EB2029A ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFCollectionMap : IDispatch
+{
+	[id( 1 ), propget, helpstring( "Returnes true if map is empty." )]
+	HRESULT Empty( [out, retval] VARIANT_BOOL *pvtbEmpty );
+
+	[id( 2 ), propget, helpstring( "Returnes number of elements in map." )]
+	HRESULT Size( [out, retval] long *plSize );
+
+	[id( 3 ), helpstring( "Erases all items in map." )]
+	HRESULT Clear( );
+
+	[id( 4 ), helpstring( "Adds an item to the queue." )]
+	HRESULT AddItem( [in] BSTR bstrKey, [in] VARIANT vtValue );
+
+	[id( 5 ), helpstring( "Adds an item to the queue." )]
+	HRESULT RemoveItemByKey( [in] BSTR bstrKey );
+
+	[id( 6 ), helpstring( "Adds an item to the queue." )]
+	HRESULT RemoveItemByIndex( [in] long lIndex );
+
+	[id( 7 ), helpstring( "" )]
+	HRESULT UpdateValueByKey( [in] BSTR bstrKey, [in] VARIANT vtValue );
+
+	[id( 8 ), helpstring( "" )]
+	HRESULT UpdateValueByIndex( [in] long lIndex, [in] VARIANT vtValue );
+
+	[id( 9 ), helpstring( "Adds an item to the queue." )]
+	HRESULT GetValueByKey( [in] BSTR bstrKey, [out, retval] VARIANT *pvtValue );
+
+	[id( 10 ), helpstring( "Gets an item by index [0,(max-1]" )]
+	HRESULT GetValueByIndex( [in] long lIndex, [out, retval] VARIANT *pvtValue );
+
+	[id( 11 ), helpstring( "" )]
+	HRESULT GetKeyByIndex( [in] long lIndex, [out, retval] BSTR *pbstrKey );
+
+	[id( 12 ), helpstring( "Sorts map by key values." )]
+	HRESULT Sort( );
+
+	[id( 13 ), helpstring( "Sorts map by key values." )]
+	HRESULT GetItemByIndex( [in] long lIndex, [in, out] BSTR *pbstrKey, [out, retval] VARIANT *pvtValue );
+};
+[
+	object,
+	uuid( C68C9800-E4E5-4D3B-B49B-DF9E0E81E7FC ),
+	dual,
+	nonextensible,
+	pointer_default( unique )
+]
+interface INCFCollectionPriorityQueue : IDispatch
+{
+	[id( 1 ), propget, helpstring( "Returnes true if queue is empty." )]
+	HRESULT Empty( [out, retval] VARIANT_BOOL *pvtbEmpty );
+
+	[id( 2 ), propget, helpstring( "Returnes number of elements in pri-queue." )]
+	HRESULT Size( [out, retval] long *plSize );
+
+	[id( 3 ), helpstring( "Erases all items in queue." )]
+	HRESULT Clear( );
+
+	[id( 4 ), helpstring( "Adds an item to the queue." )]
+	HRESULT AddItem( [in] VARIANT vtItem, [in] long lPriority );
+
+	[id( 5 ), helpstring( "Pops the first item i queue." )]
+	HRESULT Pop( [out, retval] VARIANT *pvtItem );
+
+	[id( 6 ), helpstring( "Removes a spesific queue-item." )]
+	HRESULT RemoveItem( [in] VARIANT vtItem );
+
+	[id( 7 ), helpstring( "Increments an items priority." )]
+	HRESULT IncrementItemPriority( [in] VARIANT vtItem, [in] long lPriority );
+
+	[id( 8 ), helpstring( "Sets a queue items priority." )]
+	HRESULT SetItemPriority( [in] VARIANT vtItem, [in] long lPriority );
+
+	[id( 9 ), helpstring( "Retrieves an item in the queue." )]
+	HRESULT GetQueueItem( [in] long lQueueIndex, [in, out] VARIANT *pvtItem, [out, retval] long *plPriority );
+};
+[
+	uuid( 0A19436E-3FDD-4996-BCCA-128B7AAABF7A ),
+	version( 1.0 ),
+]
+library ItSoftwareNCFCollectionLib
+{
+	importlib( "stdole2.tlb" );
+	[
+		uuid( 86F1F40D-CD16-4365-80B9-24BC5FE5DCF0 )
+	]
+	coclass NCFCollectionList
+	{
+		[default] interface INCFCollectionList;
+	};
+	[
+		uuid( 1A035331-2AD2-43AE-B9D1-F9E4ED9B15C0 )
+	]
+	coclass NCFCollectionMap
+	{
+		[default] interface INCFCollectionMap;
+	};
+	[
+		uuid( 70E377C2-08AC-4FD4-940B-5F16FD13E1EB )
+	]
+	coclass NCFCollectionPriorityQueue
+	{
+		[default] interface INCFCollectionPriorityQueue;
+	};
+};
+

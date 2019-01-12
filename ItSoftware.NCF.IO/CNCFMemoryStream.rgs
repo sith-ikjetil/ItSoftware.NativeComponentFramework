@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.MemoryStream.1 = s 'NCFMemoryStream Class'
+	{
+		CLSID = s '{9D9DCBCB-F2ED-4648-A953-B54E5FBA3CFE}'
+	}
+	ItSoftware.NCF.MemoryStream = s 'NCFMemoryStream Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.MemoryStream.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9D9DCBCB-F2ED-4648-A953-B54E5FBA3CFE} = s 'NCFMemoryStream Class'
+		{
+			ProgID = s 'ItSoftware.NCF.MemoryStream.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.MemoryStream'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{CE56C292-257B-4680-9026-0F4E43D79CBD}'
+			Version = s '1.0'
+		}
+	}
+}

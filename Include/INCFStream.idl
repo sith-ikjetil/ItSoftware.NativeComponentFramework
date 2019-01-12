@@ -1,0 +1,48 @@
+// ItSoftwareNCFMp3Tag.idl : IDL source for ItSoftware.NCF.Mp3Tag
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFMp3Tag.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(40CE1CCD-A99C-4A34-B285-4C122C8D5018),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INCFStream : IDispatch
+{
+	[id(1), helpstring("Write file data.")]
+	HRESULT WriteFrom([in] BYTE* pData, [in] long length);
+
+	[id(2), helpstring("Write file data.")]
+	HRESULT WriteFromStream([in] INCFStream* pINCFStream, [in] long length);
+
+	[id(3), helpstring("Read file data.")]
+	HRESULT ReadTo([in] BYTE* pData, [in] long length);
+
+	[id(4), helpstring("Read file data.")]
+	HRESULT ReadToStream([in] INCFStream* pINCFStream, [in] long length);
+
+	[id(5), helpstring("Set current position."), propput]
+	HRESULT CurrentReadPosition([in] long position);
+
+	[id(5), helpstring("Get current position."), propget]
+	HRESULT CurrentReadPosition([out, retval] long* position);
+
+	[id(6), helpstring("Set current position."), propput]
+	HRESULT CurrentWritePosition([in] long position);
+
+	[id(6), helpstring("Get current position."), propget]
+	HRESULT CurrentWritePosition([out, retval] long* position);
+
+	[id(7), helpstring("Closes the stream. No more reading and writing.")]
+	HRESULT Close();
+
+	[id(8), helpstring("Returnes the length of the file."), propget]
+	HRESULT Length([out, retval] long* length);
+};

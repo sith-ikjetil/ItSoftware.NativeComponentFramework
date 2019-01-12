@@ -1,0 +1,131 @@
+﻿  64 bit Processing .\ItSoftwareNCFAudio.idl
+  ItSoftwareNCFAudio.idl
+.\ItSoftwareNCFAudio.idl(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+.\ItSoftwareNCFAudio.idl(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.idl
+  oaidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\objidl.idl
+  objidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\unknwn.idl
+  unknwn.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypes.idl
+  wtypes.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\wtypesbase.idl
+  wtypesbase.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\basetsd.h
+  basetsd.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared\guiddef.h
+  guiddef.h
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.idl
+  ocidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oleidl.idl
+  oleidl.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\servprov.idl
+  servprov.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\urlmon.idl
+  urlmon.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\msxml.idl
+  msxml.idl
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\oaidl.acf
+  oaidl.acf
+  64 bit Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um\ocidl.acf
+  ocidl.acf
+  stdafx.cpp
+  CNCFAacEncoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  CNCFAacTag.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(405): warning C4244: '=': conversion from 'QWORD' to 'ULONG', possible loss of data
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(578): error C2065: 'INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(578): error C2923: 'ATL::CComPtr': 'INCFString' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(578): error C2133: 'pINCFString': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(578): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(579): error C2661: 'ATL::CComPtrBase<T>::CoCreateInstance': no overloaded function takes 1 arguments
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaactag.cpp(584): error C2039: 'StringBetweenStrings': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+  CNCFAudioCD.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(874): error C2065: 'INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(874): error C2923: 'ATL::CComPtr': 'INCFString' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(874): error C2133: 'pINCFString': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(874): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(875): error C2661: 'ATL::CComPtrBase<T>::CoCreateInstance': no overloaded function takes 1 arguments
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(976): error C2039: 'Replace': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1003): error C2039: 'Left': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1006): error C2065: 'INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1006): error C2923: 'ATL::CComPtr': 'INCFCollectionList' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1006): error C2133: 'pINCFCollectionList': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1006): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1007): error C2039: 'SplitToCollection': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1009): error C2039: 'GetItemByIndex': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1017): error C2039: 'StringAfterString': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1020): error C2039: 'SplitToCollection': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1021): error C2039: 'GetItemByIndex': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1023): error C2039: 'GetItemByIndex': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1067): error C2065: 'INCFCollectionList': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1067): error C2923: 'ATL::CComPtr': 'INCFCollectionList' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1067): error C2133: 'pINCFCollectionList': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1067): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1068): error C2039: 'LineSplitToCollection': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1071): error C2039: 'get_Size': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1075): error C2039: 'GetItemByIndex': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1079): error C2039: 'Find': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1082): error C2039: 'CutLeft': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1085): error C2039: 'Split': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1088): error C2039: 'Trim': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1089): error C2039: 'Trim': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1093): error C2039: 'Find': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1096): error C2039: 'CutLeft': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1098): error C2039: 'Trim': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1102): error C2039: 'Find': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1105): error C2039: 'CutLeft': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1107): error C2039: 'Trim': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1111): error C2039: 'Find': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1113): error C2039: 'Find': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1116): error C2039: 'CutLeft': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudiocd.cpp(1118): error C2039: 'Trim': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+  CNCFAudioPlayer.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfaudioplayer.cpp(965): warning C4018: '<': signed/unsigned mismatch
+  CNCFEncoderParams.cpp
+  CNCFMp3Encoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  CNCFMp3Genre.cpp
+  CNCFMp3Tag.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(405): warning C4244: '=': conversion from 'QWORD' to 'ULONG', possible loss of data
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(578): error C2065: 'INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(578): error C2923: 'ATL::CComPtr': 'INCFString' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(578): error C2133: 'pINCFString': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(578): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(579): error C2661: 'ATL::CComPtrBase<T>::CoCreateInstance': no overloaded function takes 1 arguments
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfmp3tag.cpp(584): error C2039: 'StringBetweenStrings': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+  CNCFWavEncoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwavencoder.cpp(83): error C2065: 'INCFFile': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwavencoder.cpp(83): error C2923: 'ATL::CComPtr': 'INCFFile' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwavencoder.cpp(83): error C2133: 'pINCFFile': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwavencoder.cpp(83): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwavencoder.cpp(84): error C2661: 'ATL::CComPtrBase<T>::CoCreateInstance': no overloaded function takes 1 arguments
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwavencoder.cpp(90): error C2039: 'Exists': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+  CNCFWmaEncoder.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\csession.h(65): warning C4838: conversion from 'DWORD' to 'int' requires a narrowing conversion
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(159): warning C4018: '<': signed/unsigned mismatch
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cencoder.h(333): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  CNCFWmaTag.cpp
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwmatag.cpp(573): error C2065: 'INCFString': undeclared identifier
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwmatag.cpp(573): error C2923: 'ATL::CComPtr': 'INCFString' is not a valid template type argument for parameter 'T'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwmatag.cpp(573): error C2133: 'pINCFString': unknown size
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwmatag.cpp(573): error C2512: 'ATL::CComPtr': no appropriate default constructor available
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\atlmfc\include\atlcomcli.h(310): note: see declaration of 'ATL::CComPtr'
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwmatag.cpp(574): error C2661: 'ATL::CComPtrBase<T>::CoCreateInstance': no overloaded function takes 1 arguments
+d:\projects\github\itsoftware.nativecomponentframework.2017\itsoftware.ncf.audio\cncfwmatag.cpp(579): error C2039: 'StringBetweenStrings': is not a member of 'ATL::_NoAddRefReleaseOnCComPtr<T>'
+  ItSoftware.NCF.Audio.cpp
+  Generating Code...

@@ -1,0 +1,26 @@
+HKCR
+{
+	ItSoftware.NCF.AacTag.1 = s 'NCFAacTag Class'
+	{
+		CLSID = s '{B05F9A1F-8B15-4A79-90BD-7C68D9392527}'
+	}
+	ItSoftware.NCF.AacTag = s 'NCFAacTag Class'
+	{		
+		CurVer = s 'ItSoftware.NCF.AacTag.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B05F9A1F-8B15-4A79-90BD-7C68D9392527} = s 'NCFAacTag Class'
+		{
+			ProgID = s 'ItSoftware.NCF.AacTag.1'
+			VersionIndependentProgID = s 'ItSoftware.NCF.AacTag'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA63225A-E434-407D-AFB9-922CCD72E640}'
+			Version = s '1.0'
+		}
+	}
+}

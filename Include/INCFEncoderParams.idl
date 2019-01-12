@@ -1,0 +1,36 @@
+// ItSoftwareNCFMp3Tag.idl : IDL source for ItSoftware.NCF.Mp3Tag
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ItSoftwareNCFMp3Tag.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(A844A5DD-9AB9-4130-A22C-CB752F3CC35D),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INCFAacTag : IDispatch
+{
+	[id(1), helpstring("Number of channels. 1 = Mono, 2 = Stereo."), propget]
+	HRESULT NumberOfChannels([out, retval] short* count);
+
+	[id(1), helpstring("Number of channels. 1 = Mono, 2 = Stereo."), propput]
+	HRESULT NumberOfChannels([in] short count);
+
+	[id(2), helpstring("Samples per second."), propget]
+	HRESULT SamplesPerSecond([out, retval] long* samples);
+
+	[id(2), helpstring("Samples per second."), propput]
+	HRESULT SamplesPerSecond([in] long samples);
+
+	[id(3), helpstring("Bits per sample."), propget]
+	HRESULT BitsPerSample([out, retval] short* bits);
+
+	[id(3), helpstring("Bits per sample."), propput]
+	HRESULT BitsPerSample([in] short bits);
+};
