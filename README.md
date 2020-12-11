@@ -21,12 +21,12 @@ The following COM components:
  AudioCD  
  AudioPlayer  
  Mp3Tag  
- Mp3Encoder
- WavEncoder
- AacTag
- AacEncoder
- WmaTag
- WmaEncoder
+ Mp3Encoder  
+ WavEncoder  
+ AacTag  
+ AacEncoder  
+ WmaTag  
+ WmaEncoder  
  
- 
+ The Audio components uses the Microsoft Media Foundation API.
 
